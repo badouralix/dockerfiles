@@ -1,7 +1,9 @@
 docker-curl-http2
 =================
 
-This repository contains **Dockerfile** of [curl](https://curl.haxx.se/) with http2 support.
+This repository contains a **Dockerfile** for [curl](https://curl.haxx.se/) with http2 support.
+
+See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/curl-http2/).
 
 
 ## Installation
@@ -16,13 +18,13 @@ $ docker build -t badouralix/curl-http2 .
 ## Usage
 
 ```
-$ docker run -it --rm badouralix/curl-http2 -I https://nghttp2.org/
+$ docker run -t --rm badouralix/curl-http2 -I https://nghttp2.org/
 ```
 
 
 ## Tips and tricks
 
-In your shell rc dotfile, you could add an `alias 'curl-http2'='docker run -it --rm badouralix/curl-http2'`
+In your shell rc dotfile, you could add an `alias 'curl-http2'='docker run -t --rm badouralix/curl-http2'`
 so that you would just have to run :
 
 ```
