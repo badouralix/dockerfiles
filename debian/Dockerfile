@@ -13,7 +13,7 @@ RUN apt-get update && \
 
 # Build nghttp2 libraries from source
 ARG NGHTTP2_RELEASE
-ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.13.0}
+ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.14.0}
 
 RUN mkdir -p /usr/local/src/nghttp2 && \
 	wget -qO- https://github.com/nghttp2/nghttp2/archive/${NGHTTP2_RELEASE}.tar.gz | \
