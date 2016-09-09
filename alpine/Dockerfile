@@ -22,12 +22,12 @@ RUN mkdir -p /usr/local/src/nghttp2 && cd /usr/local/src/nghttp2 && \
 
 # Build curl from source
 ARG CURL_RELEASE
-ENV CURL_RELEASE ${CURL_RELEASE:-curl-7_50_1}
+ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.50.2}
 
 RUN mkdir -p /usr/local/src/curl && cd /usr/local/src/curl && \
 	apk add --update --no-cache --virtual build-dependencies \
 		autoconf automake g++ libtool make openssl openssl-dev tar && \
-	wget -qO- https://github.com/curl/curl/archive/${CURL_RELEASE}.tar.gz  | \
+	wget -qO- https://curl.haxx.se/download/${CURL_RELEASE}.tar.gz | \
 		tar -xzf - --directory=/usr/local/src/curl --strip-components=1 && \
 	./buildconf  && \
 	./configure --enable-ipv6 --enable-threaded-resolver \
