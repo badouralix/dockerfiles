@@ -1,6 +1,9 @@
 docker-curl-http2
 =================
 
+[![](https://images.microbadger.com/badges/version/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own image badge on microbadger.com")
+
 This repository contains a **Dockerfile** for [curl](https://curl.haxx.se/) with http2 support.
 
 See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/curl-http2/).
