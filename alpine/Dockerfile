@@ -8,7 +8,7 @@ RUN apk add --update --no-cache \
 
 # Build nghttp2 libraries from source
 ARG NGHTTP2_RELEASE
-ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.14.1}
+ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.15.0}
 
 RUN mkdir -p /usr/local/src/nghttp2 && cd /usr/local/src/nghttp2 && \
 	apk add --update --no-cache --virtual build-dependencies \

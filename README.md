@@ -49,7 +49,7 @@ $ curl-http2 -I https://nghttp2.org/
 
 ## Tags
 
-All images are built with [`nghttp2 v1.14.1`](https://github.com/nghttp2/nghttp2/releases/tag/v1.14.1) and [`curl 7.50.3`](https://github.com/curl/curl/releases/tag/curl-7_50_3).
+All images are built with [`nghttp2 v1.15.0`](https://github.com/nghttp2/nghttp2/releases/tag/v1.15.0) and [`curl 7.50.3`](https://github.com/curl/curl/releases/tag/curl-7_50_3).
 
  - `latest`, `alpine` : image based on `alpine:3.4`
  - `debian` : image based on `debian:jessie`
@@ -60,7 +60,7 @@ All images are built with [`nghttp2 v1.14.1`](https://github.com/nghttp2/nghttp2
 ### Alpine
 
 ```
-curl 7.50.2 (x86_64-unknown-linux-gnu) libcurl/7.50.2 OpenSSL/1.0.2h zlib/1.2.8 nghttp2/1.14.0
+curl 7.50.3 (x86_64-unknown-linux-gnu) libcurl/7.50.3 OpenSSL/1.0.2j zlib/1.2.8 nghttp2/1.15.0
 Protocols: dict file ftp ftps gopher http https imap imaps pop3 pop3s rtsp smb smbs smtp smtps telnet tftp
 Features: AsynchDNS IPv6 Largefile NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSockets
 ```
@@ -68,7 +68,7 @@ Features: AsynchDNS IPv6 Largefile NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSocke
 ### Debian
 
 ```
-curl 7.50.2 (x86_64-unknown-linux-gnu) libcurl/7.50.2 OpenSSL/1.0.1t zlib/1.2.8 libidn/1.29 libpsl/0.5.1 (+libicu/52.1) libssh2/1.4.3 nghttp2/1.14.0 librtmp/2.3
+curl 7.50.3 (x86_64-unknown-linux-gnu) libcurl/7.50.3 OpenSSL/1.0.1t zlib/1.2.8 libidn/1.29 libpsl/0.5.1 (+libicu/52.1) libssh2/1.4.3 nghttp2/1.15.0 librtmp/2.3
 Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
 Features: AsynchDNS IDN IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSockets PSL
 ```
