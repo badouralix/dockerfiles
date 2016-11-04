@@ -13,7 +13,7 @@ RUN apt-get update && \
 
 # Build nghttp2 libraries from source
 ARG NGHTTP2_RELEASE
-ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.15.0}
+ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.16.0}
 
 RUN mkdir -p /usr/local/src/nghttp2 && \
 	wget -qO- https://github.com/nghttp2/nghttp2/archive/${NGHTTP2_RELEASE}.tar.gz | \
@@ -26,7 +26,7 @@ RUN mkdir -p /usr/local/src/nghttp2 && \
 
 # Build curl from source
 ARG CURL_RELEASE
-ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.50.3}
+ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.51.0}
 
 RUN mkdir -p /usr/local/src/curl && \
 	wget -qO- https://curl.haxx.se/download/${CURL_RELEASE}.tar.gz | \

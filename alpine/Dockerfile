@@ -8,7 +8,7 @@ RUN apk add --update --no-cache \
 
 # Build nghttp2 libraries from source
 ARG NGHTTP2_RELEASE
-ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.15.0}
+ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.16.0}
 
 RUN mkdir -p /usr/local/src/nghttp2 && cd /usr/local/src/nghttp2 && \
 	apk add --update --no-cache --virtual build-dependencies \
@@ -22,7 +22,7 @@ RUN mkdir -p /usr/local/src/nghttp2 && cd /usr/local/src/nghttp2 && \
 
 # Build curl from source
 ARG CURL_RELEASE
-ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.50.3}
+ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.51.0}
 
 RUN mkdir -p /usr/local/src/curl && cd /usr/local/src/curl && \
 	apk add --update --no-cache --virtual build-dependencies \

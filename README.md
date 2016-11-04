@@ -52,7 +52,7 @@ $ curl-http2 -I https://nghttp2.org/
 
 ## Tags
 
-All images are built with [`nghttp2 v1.15.0`](https://github.com/nghttp2/nghttp2/releases/tag/v1.15.0) and [`curl 7.50.3`](https://github.com/curl/curl/releases/tag/curl-7_50_3).
+All images are built with [`nghttp2 v1.16.0`](https://github.com/nghttp2/nghttp2/releases/tag/v1.16.0) and [`curl 7.51.0`](https://github.com/curl/curl/releases/tag/curl-7_51.0).
 
  - `latest`, `alpine` : image based on `alpine:3.4`
  - `debian` : image based on `debian:jessie`
