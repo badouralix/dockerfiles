@@ -13,7 +13,7 @@ See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/curl-http2/).
 ```
 $ git clone https://github.com/badouralix/docker-curl-http2.git
 $ cd docker-curl-http2/<BASE_IMAGE>
-$ docker build -t $USER-local/curl-http2 .
+$ docker build -t $USER-local/curl-http2:<BASE_IMAGE> .
 ```
 
 
