@@ -1,24 +1,31 @@
-docker-scrapy
+python-scrapy
 =============
 
 
-This repository contains **Dockerfile** of [Scrapy](http://scrapy.org/).
+This repository contains a **Dockerfile** for [Scrapy](http://scrapy.org/).
 
-
-## Base Docker Image
-
-This image is based on debian:stretch.
+See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/python-scrapy/).
 
 
 ## Installation
 
 1. Install [Docker](https://www.docker.com/).
-2. After cloning, build an image from the Dockerfile : `docker build -t $USER/scrapy .`
+2. After cloning, build an image from the Dockerfile : `docker build -t $USER-local/python-scrapy .`
 
 
 ## Usage
 
 ```
-docker run -it --rm $USER/scrapy
+docker run -it --rm badouralix/python-scrapy
 ```
+
+
+## Tags
+
+ - `latest` : image based on `debian:stretch`
+
+
+## License
+
+All contents licensed under the [WTFPL](../LICENSE)
 
