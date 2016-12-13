@@ -1,18 +1,16 @@
 FROM alpine:3.4
 MAINTAINER Ayaz BADOURALY <ayaz.badouraly@via.ecp.fr>
 
-# Install zsh
+# Install zsh and oh-my-zsh
+# Not removing git in order to test theme prompt
 RUN apk add --update --no-cache \
+		git \
 		zsh && \
-	rm -rf /var/cache/apk/*
+	rm -rf /var/cache/apk/* && \
+	git clone --depth=1 git://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh
 
-# Install oh-my-zsh and oh-my-via
-RUN apk add --update --no-cache --virtual build-dependencies \
-		git && \
-	git clone --depth=1 git://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
-	git clone --depth=1 https://github.com/badouralix/oh-my-via.git /opt/oh-my-zsh/custom/themes/oh-my-via && \
-	apk del build-dependencies && \
-	rm -rf /var/cache/apk/*
+# Install oh-my-via
+RUN git clone --depth=1 https://github.com/badouralix/oh-my-via.git /opt/oh-my-zsh/custom/themes/oh-my-via
 
 COPY zshrc /etc/zsh/zshrc
 
