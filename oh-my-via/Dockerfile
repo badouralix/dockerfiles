@@ -9,8 +9,8 @@ RUN apk add --update --no-cache \
 # Install oh-my-zsh and oh-my-via
 RUN apk add --update --no-cache --virtual build-dependencies \
 		git && \
-	git clone git://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
-	git clone https://github.com/badouralix/oh-my-via.git /opt/oh-my-zsh/custom/themes/oh-my-via && \
+	git clone --depth=1 git://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
+	git clone --depth=1 https://github.com/badouralix/oh-my-via.git /opt/oh-my-zsh/custom/themes/oh-my-via && \
 	apk del build-dependencies && \
 	rm -rf /var/cache/apk/*
 
