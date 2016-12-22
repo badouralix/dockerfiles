@@ -1,10 +1,11 @@
 zunit
 =====
 
-This **Dockerfile** builds an image with zsh and [zunit framework](https://github.com/molovo/zunit).
-
 ⚠️⚠️⚠️  **ZUnit is still in progress, this image is built upon branch `version-0.3.x`.** ⚠️⚠️⚠️
 
+This **Dockerfile** builds an image with zsh and [zunit framework](https://github.com/molovo/zunit).
+
+See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/zunit/).
 
 ## Usage
 
