@@ -19,8 +19,8 @@
 
 set -e
 
-# Prepend "zunit" if the first argument is a file / directory or is not an executable
-if [ -e "$1" ] || ! type -- "$1" &> /dev/null; then
+# Prepend "zunit" if the first argument is a file / directory in the current workdir or is not an executable
+if [ -e "$(echo $1 | sed -r 's|^(/)?|./|')" ] || ! type -- "$1" &> /dev/null; then
 	set -- zunit "$@"
 fi
 
