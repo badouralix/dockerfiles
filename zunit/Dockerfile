@@ -25,6 +25,9 @@ RUN apk add --update --no-cache --virtual build-dependencies \
 	apk del build-dependencies && \
 	rm -rf /tmp/* /var/cache/apk/*
 
-# Set default CMD to zunit
+# Set default ENTRYPOINT and CMD
+COPY entrypoint.sh /
+
+ENTRYPOINT ["/entrypoint.sh"]
 CMD ["zunit"]
 

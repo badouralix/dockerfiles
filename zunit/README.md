@@ -13,7 +13,7 @@ Default workdir is `/app`.
 Thus, assuming you are currently in your project directory:
 
 ```
-$ docker run -t --rm -v $PWD:/app:ro badouralix/zunit
+docker run -t --rm -v $PWD:/app:ro badouralix/zunit
 ```
 
 See [README](https://github.com/molovo/zunit/blob/master/README.md) to learn how to use `zunit`.
@@ -25,7 +25,7 @@ In your shell rc dotfile, you could add an `alias zunit='docker run -t --rm -v $
 so that you would just have to run :
 
 ```
-$ zunit
+zunit
 ```
 
 
