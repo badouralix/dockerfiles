@@ -26,7 +26,7 @@ RUN mkdir -p /usr/local/src/nghttp2 && \
 
 # Build curl from source
 ARG CURL_RELEASE
-ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.51.0}
+ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.52.1}
 
 RUN mkdir -p /usr/local/src/curl && \
 	wget -qO- https://curl.haxx.se/download/${CURL_RELEASE}.tar.gz | \

@@ -22,7 +22,7 @@ RUN mkdir -p /usr/local/src/nghttp2 && cd /usr/local/src/nghttp2 && \
 
 # Build curl from source
 ARG CURL_RELEASE
-ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.51.0}
+ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.52.1}
 
 RUN mkdir -p /usr/local/src/curl && cd /usr/local/src/curl && \
 	apk add --update --no-cache --virtual build-dependencies \
