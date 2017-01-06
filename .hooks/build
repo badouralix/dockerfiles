@@ -1,0 +1,33 @@
+#!/bin/bash
+#
+# This file override the `build` command during automated build. For further infomation, see
+# https://docs.docker.com/docker-cloud/builds/advanced/#override-build-test-or-push-commands
+#
+
+# Print envvars
+echo "Utility environment variables set by the build process:"
+echo " - SOURCE_BRANCH=$SOURCE_BRANCH"
+echo " - SOURCE_COMMIT=$SOURCE_COMMIT"
+echo " - COMMIT_MSG=$COMMIT_MSG"
+echo " - DOCKER_REPO=$DOCKER_REPO"
+echo " - DOCKER_TAG=$DOCKER_TAG"
+echo " - IMAGE_NAME=$IMAGE_NAME"
+
+# Set custom envvars
+BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+VCS_REF=`git rev-parse --short HEAD`
+
+# Print custom envvars
+echo "Custom environments variables set by the build hook:"
+echo " - BUILD_DATE=$BUILD_DATE"
+echo " - VCS_REF=$VCS_REF"
+
+# Patch the Dockerfile ( see http://label-schema.org/ )
+echo "LABEL org.label-schema.build-date=$BUILD_DATE \\" >> Dockerfile
+echo "      org.label-schema.vcs-ref=$VCS_REF \\"       >> Dockerfile
+echo "      org.label-schema.schema-version=1.0.0-rc.1" >> Dockerfile
+
+# Start building
+echo "Build hook running"
+docker build -t $IMAGE_NAME .
+
