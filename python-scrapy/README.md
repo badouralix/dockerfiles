@@ -1,6 +1,8 @@
 python-scrapy
 =============
 
+[![](https://images.microbadger.com/badges/version/badouralix/python-scrapy.svg)](https://microbadger.com/images/badouralix/python-scrapy "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/python-scrapy.svg)](https://microbadger.com/images/badouralix/python-scrapy "Get your own image badge on microbadger.com")
+
 
 This repository contains a **Dockerfile** for [Scrapy](http://scrapy.org/).
 

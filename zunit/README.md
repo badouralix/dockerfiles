@@ -1,11 +1,15 @@
 zunit
 =====
 
+[![](https://images.microbadger.com/badges/version/badouralix/zunit.svg)](https://microbadger.com/images/badouralix/zunit "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/zunit.svg)](https://microbadger.com/images/badouralix/zunit "Get your own image badge on microbadger.com")
+
+
 ⚠️⚠️⚠️  **ZUnit is still in progress, this image is built upon branch `version-0.3.x`.** ⚠️⚠️⚠️
 
 This **Dockerfile** builds an image with zsh and [zunit framework](https://github.com/molovo/zunit).
 
 See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/zunit/).
+
 
 ## Usage
 
