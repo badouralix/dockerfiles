@@ -15,11 +15,11 @@ echo " - IMAGE_NAME=$IMAGE_NAME"
 
 # Set custom envvars
 BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
-DOCKER_CONTEXT=`git config --get remote.origin.url | \
-	sed -r "s,^git@(.*):(.*)\.git$,https://\1/\2/tree/$(git rev-parse HEAD)/$(git rev-parse --show-prefix)," | \
-	head --bytes -2`
 VCS_REF=`git rev-parse --short HEAD`
-VCS_URL=`git config --get remote.origin.url | sed -r "s,^git@(.*):(.*)\.git$,https://\1/\2,"`
+VCS_URL=`git config --get remote.origin.url | \
+		sed -r "s,^git@(.*):(.*)$,https://\1/\2," | \
+		sed -r "s,^(.*)\.git$,\1,"`
+DOCKER_CONTEXT=`echo "$VCS_URL/tree/$(git rev-parse HEAD)/$(git rev-parse --show-prefix)" | head --bytes -2`
 
 
 # Print custom envvars
