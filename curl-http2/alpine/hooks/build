@@ -1,1 +1,4 @@
-../../../.hooks/build
+#!/bin/bash
+
+exec /bin/bash ../../.hooks/build
+
