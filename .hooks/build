@@ -15,17 +15,26 @@ echo " - IMAGE_NAME=$IMAGE_NAME"
 
 # Set custom envvars
 BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
+DOCKER_CONTEXT=`git config --get remote.origin.url | \
+	sed -r "s,^git@(.*):(.*)\.git$,https://\1/\2/tree/$(git rev-parse HEAD)/$(git rev-parse --show-prefix)," | \
+	head --bytes -2`
 VCS_REF=`git rev-parse --short HEAD`
+VCS_URL=`git config --get remote.origin.url | sed -r "s,^git@(.*):(.*)\.git$,https://\1/\2,"`
+
 
 # Print custom envvars
 echo "Custom environments variables set by the build hook:"
 echo " - BUILD_DATE=$BUILD_DATE"
+echo " - DOCKER_CONTEXT=$DOCKER_CONTEXT"
 echo " - VCS_REF=$VCS_REF"
+echo " - VCS_URL=$VCS_URL"
 
 # Patch the Dockerfile ( see http://label-schema.org/ )
-echo "LABEL org.label-schema.build-date=$BUILD_DATE \\" >> Dockerfile
-echo "      org.label-schema.vcs-ref=$VCS_REF \\"       >> Dockerfile
-echo "      org.label-schema.schema-version=1.0.0-rc.1" >> Dockerfile
+echo "LABEL org.label-schema.build-date=$BUILD_DATE \\"         >> Dockerfile
+echo "      org.label-schema.docker.context=$DOCKER_CONTEXT \\" >> Dockerfile
+echo "      org.label-schema.vcs-ref=$VCS_REF \\"               >> Dockerfile
+echo "      org.label-schema.vcs-url=$VCS_URL \\"               >> Dockerfile
+echo "      org.label-schema.schema-version=1.0.0-rc.1"         >> Dockerfile
 
 # Start building
 echo "Build hook running"
