@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# This file override the `build` command during automated build. For further infomation, see
-# https://docs.docker.com/docker-cloud/builds/advanced/#override-build-test-or-push-commands
+# This file overrides the `build` command during automated build process. For further infomation,
+# see  https://docs.docker.com/docker-cloud/builds/advanced/#override-build-test-or-push-commands
 #
 
 # Print envvars
