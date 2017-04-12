@@ -21,6 +21,10 @@ Current dockerfiles
 [![](https://images.microbadger.com/badges/version/badouralix/python-scrapy.svg)](https://microbadger.com/images/badouralix/python-scrapy "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/badouralix/python-scrapy.svg)](https://microbadger.com/images/badouralix/python-scrapy "Get your own image badge on microbadger.com")
 
+* [rancher-cli](https://hub.docker.com/r/badouralix/rancher-cli/) : rancher-cli for gitlab-ci
+[![](https://images.microbadger.com/badges/version/badouralix/rancher-cli.svg)](https://microbadger.com/images/badouralix/rancher-cli "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/badouralix/rancher-cli.svg)](https://microbadger.com/images/badouralix/rancher-cli "Get your own image badge on microbadger.com")
+
 * [zunit](https://hub.docker.com/r/badouralix/zunit/) : alpine-based image for ZUnit, a powerful unit testing framework for ZSH
 [![](https://images.microbadger.com/badges/version/badouralix/zunit.svg)](https://microbadger.com/images/badouralix/zunit "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/badouralix/zunit.svg)](https://microbadger.com/images/badouralix/zunit "Get your own image badge on microbadger.com")

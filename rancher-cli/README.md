@@ -1,6 +1,8 @@
 rancher-cli
 ===========
 
+[![](https://images.microbadger.com/badges/version/badouralix/rancher-cli.svg)](https://microbadger.com/images/badouralix/rancher-cli "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/rancher-cli.svg)](https://microbadger.com/images/badouralix/rancher-cli "Get your own image badge on microbadger.com")
+
 This **Dockerfile** builds a docker image based on [rancher/cli](https://hub.docker.com/r/rancher/cli/), with an overridden
 `ENTRYPOINT` to handle custom `CMD`s. Useful when using, for instance,
 [gitlab-ci](https://docs.gitlab.com/ce/ci/docker/using_docker_images.html#how-docker-integration-works), or any other CI/CD tool
