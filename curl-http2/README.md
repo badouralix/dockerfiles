@@ -24,15 +24,15 @@ $ docker build -t $USER-local/curl-http2:<BASE_IMAGE> .
 $ docker run -t --rm badouralix/curl-http2 -I https://nghttp2.org/
 
 HTTP/2 200
-date: Mon, 15 Aug 2016 23:28:22 GMT
+date: Wed, 12 Apr 2017 00:26:57 GMT
 content-type: text/html
-last-modified: Thu, 21 Jul 2016 14:06:56 GMT
-etag: "5790d700-19e1"
+last-modified: Sun, 09 Apr 2017 13:25:12 GMT
+etag: "58ea3638-19ff"
 accept-ranges: bytes
-content-length: 6625
-x-backend-header-rtt: 0.002506
+content-length: 6655
+x-backend-header-rtt: 0.001404
 strict-transport-security: max-age=31536000
-server: nghttpx nghttp2/1.14.0-DEV
+server: nghttpx
 via: 2 nghttpx
 x-frame-options: SAMEORIGIN
 x-xss-protection: 1; mode=block
@@ -52,9 +52,9 @@ $ curl-http2 -I https://nghttp2.org/
 
 ## Tags
 
-All images are built with [`nghttp2 v1.18.0`](https://github.com/nghttp2/nghttp2/releases/tag/v1.18.0) and [`curl 7.52.1`](https://github.com/curl/curl/releases/tag/curl-7_52_1).
+All images are built with [`nghttp2 v1.21.1`](https://github.com/nghttp2/nghttp2/releases/tag/v1.21.1) and [`curl 7.53.1`](https://github.com/curl/curl/releases/tag/curl-7_53_1).
 
- - `latest`, `alpine` : image based on `alpine:3.4`
+ - `latest`, `alpine` : image based on `alpine:3.5`
  - `debian` : image based on `debian:jessie`
 
 
@@ -63,7 +63,7 @@ All images are built with [`nghttp2 v1.18.0`](https://github.com/nghttp2/nghttp2
 ### Alpine
 
 ```
-curl 7.52.1 (x86_64-unknown-linux-gnu) libcurl/7.52.1 OpenSSL/1.0.2j zlib/1.2.8 nghttp2/1.18.0
+curl 7.53.1 (x86_64-unknown-linux-gnu) libcurl/7.53.1 OpenSSL/1.0.2k zlib/1.2.8 nghttp2/1.21.1
 Protocols: dict file ftp ftps gopher http https imap imaps pop3 pop3s rtsp smb smbs smtp smtps telnet tftp
 Features: AsynchDNS IPv6 Largefile NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSockets HTTPS-proxy
 ```
@@ -71,7 +71,7 @@ Features: AsynchDNS IPv6 Largefile NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSocke
 ### Debian
 
 ```
-curl 7.52.1 (x86_64-unknown-linux-gnu) libcurl/7.52.1 OpenSSL/1.0.1t zlib/1.2.8 libpsl/0.5.1 (+libicu/52.1) libssh2/1.4.3 nghttp2/1.18.0 librtmp/2.3
+curl 7.53.1 (x86_64-unknown-linux-gnu) libcurl/7.53.1 OpenSSL/1.0.1t zlib/1.2.8 libpsl/0.5.1 (+libicu/52.1) libssh2/1.4.3 nghttp2/1.21.1 librtmp/2.3
 Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
 Features: AsynchDNS IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSockets HTTPS-proxy PSL
 ```

@@ -1,18 +1,19 @@
-FROM alpine:3.4
+FROM alpine:3.5
 MAINTAINER Ayaz BADOURALY <ayaz.badouraly@via.ecp.fr>
 
 # Install useful packages
 RUN apk add --update --no-cache \
-		ca-certificates && \
+		ca-certificates \
+		openssl && \
 	rm -rf /var/cache/apk/*
 
 # Build nghttp2 libraries from source
 ARG NGHTTP2_RELEASE
-ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.18.0}
+ENV NGHTTP2_RELEASE ${NGHTTP2_RELEASE:-v1.21.1}
 
 RUN mkdir -p /usr/local/src/nghttp2 && cd /usr/local/src/nghttp2 && \
 	apk add --update --no-cache --virtual build-dependencies \
-		autoconf automake g++ libtool make openssl tar && \
+		autoconf automake g++ libtool make tar && \
 	wget -qO- https://github.com/nghttp2/nghttp2/archive/${NGHTTP2_RELEASE}.tar.gz | \
 		tar -xzf - --directory=/usr/local/src/nghttp2 --strip-components=1 && \
 	autoreconf -i && automake && autoconf && \
@@ -22,11 +23,11 @@ RUN mkdir -p /usr/local/src/nghttp2 && cd /usr/local/src/nghttp2 && \
 
 # Build curl from source
 ARG CURL_RELEASE
-ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.52.1}
+ENV CURL_RELEASE ${CURL_RELEASE:-curl-7.53.1}
 
 RUN mkdir -p /usr/local/src/curl && cd /usr/local/src/curl && \
 	apk add --update --no-cache --virtual build-dependencies \
-		autoconf automake g++ libtool make openssl openssl-dev tar && \
+		autoconf automake g++ libtool make openssl-dev tar && \
 	wget -qO- https://curl.haxx.se/download/${CURL_RELEASE}.tar.gz | \
 		tar -xzf - --directory=/usr/local/src/curl --strip-components=1 && \
 	./buildconf  && \
