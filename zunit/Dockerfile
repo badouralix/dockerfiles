@@ -19,7 +19,7 @@ RUN apk add --update --no-cache --virtual build-dependencies \
 	git clone --depth=1 https://github.com/molovo/revolver /tmp/revolver && \
 		cp /tmp/revolver/revolver /usr/local/bin/revolver && \
 		chmod +x /usr/local/bin/revolver && \
-	git clone --depth=1 --branch version-0.3.x https://github.com/molovo/zunit /tmp/zunit && \
+	git clone --depth=1 https://github.com/molovo/zunit /tmp/zunit && \
 		cp /tmp/zunit/zunit /usr/local/bin/zunit && \
 		chmod +x /usr/local/bin/zunit && \
 	apk del build-dependencies && \
