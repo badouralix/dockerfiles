@@ -13,6 +13,8 @@ See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/rancher-cli/).
 
 ## Usage
 
+### CLI usage
+
 Assuming envvars `RANCHER_URL`, `RANCHER_ACCESS_KEY` and `RANCHER_SECRET_KEY` are set:
 
 ```
@@ -21,10 +23,23 @@ docker run --rm -e RANCHER_URL=$RANCHER_URL -e RANCHER_ACCESS_KEY=$RANCHER_ACCES
 
 If rancher command is not an alpine command, `rancher` can be omitted within the previous command.
 
+### GitLab-CI
+
+Assuming secret variables `RANCHER_URL`, `RANCHER_ACCESS_KEY` and `RANCHER_SECRET_KEY` are set in your CI/CD pipelines settings,
+image can be use as follow, to restart a service for instance:
+
+```
+image: badouralix/rancher-cli
+
+script:
+  - rancher --wait restart stack/service
+```
+
 
 ## Warning
 
-This image is known to be buggy with several built-in commands such as `help`...
+When using it in command line, this image is known to be buggy with several built-in commands such as `help`... The safest way to
+use this image is to always append `rancher` before any rancher-cli command, thus to prevent any error.
 
 
 ## License
