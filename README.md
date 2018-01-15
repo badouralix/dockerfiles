@@ -13,6 +13,8 @@ Current dockerfiles
 [![](https://images.microbadger.com/badges/version/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own image badge on microbadger.com")
 
+* lustre : debian-based docker image for Lustre V4
+
 * [nusmv](https://hub.docker.com/r/badouralix/curl-http2/) : alpine-based Docker image with NuSMV and zchaff SAT solver
 [![](https://images.microbadger.com/badges/version/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own image badge on microbadger.com")
