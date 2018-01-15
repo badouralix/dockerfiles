@@ -1,0 +1,14 @@
+FROM alpine:3.7 AS dl
+RUN mkdir nusmv
+RUN wget http://nusmv.fbk.eu/distrib/NuSMV-2.6.0-zchaff-linux64.tar.gz && \
+    tar -xvzf NuSMV-2.6.0-zchaff-linux64.tar.gz -C nusmv --strip-components=1
+RUN cd nusmv/bin && \
+    ln -s NuSMV nusmv
+
+FROM alpine:3.7
+LABEL maintainer="Ayaz BADOURALY <ayaz.badouraly+docker@via.ecp.fr>"
+WORKDIR /input
+RUN mkdir -p /opt/nusmv
+COPY --from=dl nusmv /opt/nusmv
+ENV PATH="/opt/nusmv/bin:${PATH}"
+CMD ["nusmv"]
