@@ -8,7 +8,6 @@ RUN cd nusmv/bin && \
 FROM alpine:3.7
 LABEL maintainer="Ayaz BADOURALY <ayaz.badouraly+docker@via.ecp.fr>"
 WORKDIR /input
-RUN mkdir -p /opt/nusmv
 COPY --from=dl nusmv /opt/nusmv
 ENV PATH="/opt/nusmv/bin:${PATH}"
 CMD ["nusmv"]
