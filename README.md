@@ -13,6 +13,10 @@ Current dockerfiles
 [![](https://images.microbadger.com/badges/version/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own image badge on microbadger.com")
 
+* [nusmv](https://hub.docker.com/r/badouralix/curl-http2/) : alpine-based Docker image with NuSMV and zchaff SAT solver
+[![](https://images.microbadger.com/badges/version/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own image badge on microbadger.com")
+
 * [oh-my-via](https://hub.docker.com/r/badouralix/oh-my-via/) : image for oh-my-via theme testing purpose
 [![](https://images.microbadger.com/badges/version/badouralix/oh-my-via.svg)](https://microbadger.com/images/badouralix/oh-my-via "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/badouralix/oh-my-via.svg)](https://microbadger.com/images/badouralix/oh-my-via "Get your own image badge on microbadger.com")

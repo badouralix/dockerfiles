@@ -2,9 +2,12 @@ NuSMV
 =====
 
 
+[![](https://images.microbadger.com/badges/version/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own image badge on microbadger.com")
+
 This **Dockerfile** builds an image with [NuSMV](http://nusmv.fbk.eu/), a
 symbolic model checker, with the zchaff SAT solver.
 
+See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/nusmv/).
 
 ## Usage
 
