@@ -35,6 +35,13 @@ echo "      org.label-schema.vcs-ref=$VCS_REF \\"               >> Dockerfile
 echo "      org.label-schema.vcs-url=$VCS_URL \\"               >> Dockerfile
 echo "      org.label-schema.schema-version=1.0.0-rc.1"         >> Dockerfile
 
+# Update base image with current tag
+CUSTOM_TAG=`docker run --rm gempesaw/curl-jq sh -c \
+            "curl -s https://hub.docker.com/v2/repositories/rancher/cli/tags/ | jq -r '.results[1].name'"`
+echo " - CUSTOM_TAG=$CUSTOM_TAG"
+sed -Ei "s,^FROM (.*):.*$,FROM \1:$CUSTOM_TAG," Dockerfile
+
 # Start building
 echo "Build hook running"
 docker build -t $IMAGE_NAME .
+
