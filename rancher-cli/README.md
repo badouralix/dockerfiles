@@ -15,7 +15,7 @@ See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/rancher-cli/).
 
 Assuming envvars `RANCHER_URL`, `RANCHER_ACCESS_KEY` and `RANCHER_SECRET_KEY` are set:
 
-```shell
+```bash
 docker run --rm -e RANCHER_URL=$RANCHER_URL -e RANCHER_ACCESS_KEY=$RANCHER_ACCESS_KEY -e RANCHER_SECRET_KEY=$RANCHER_SECRET_KEY badouralix/rancher-cli rancher ps
 ```
 
@@ -28,7 +28,6 @@ image can be use as follow, to restart a service for instance:
 
 ```yaml
 image: badouralix/rancher-cli
-
 script:
   - rancher --wait restart stack/service
 ```
