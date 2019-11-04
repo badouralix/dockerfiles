@@ -24,4 +24,3 @@ if ! type -- "$1" &> /dev/null; then
 fi
 
 exec "$@"
-

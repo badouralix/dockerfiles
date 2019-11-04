@@ -3,11 +3,9 @@ curl-http2
 
 [![](https://images.microbadger.com/badges/version/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own image badge on microbadger.com")
 
-
 This repository contains a **Dockerfile** for [curl](https://curl.haxx.se/) with http2 support.
 
 See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/curl-http2/).
-
 
 ## Installation
 
@@ -25,10 +23,9 @@ $ cd dockerfiles/curl-http2/<BASE_IMAGE>
 $ docker build -t $USER-local/curl-http2:<BASE_IMAGE> .
 ```
 
-
 ## Usage
 
-```
+```bash
 $ docker run -t --rm badouralix/curl-http2 -I https://nghttp2.org/
 
 HTTP/2 200
@@ -47,47 +44,44 @@ x-xss-protection: 1; mode=block
 x-content-type-options: nosniff
 ```
 
-
 ## Tips and tricks
 
 In your shell rc dotfile, you could add an `alias 'curl-http2'='docker run -t --rm badouralix/curl-http2'`
 so that you would just have to run :
 
-```
+```bash
 $ curl-http2 -I https://nghttp2.org/
 ```
 
-
 ## Tags
 
-All images are built with [`nghttp2 v1.26.0`](https://github.com/nghttp2/nghttp2/releases/tag/v1.26.0) and [`curl 7.56.0`](https://github.com/curl/curl/releases/tag/curl-7_56_0).
+All images are using the distribution `curl` package.
 
- - `latest`, `alpine` : image based on `alpine:3.6`
- - `debian` : image based on `debian:stretch`
-
+- `latest`, `alpine` : image based on `alpine:latest`
+- `debian` : image based on `debian:latest`
 
 ## Versions, protocols and features
 
+:warning: this may change as the latest base image changes
+
 ### Alpine
 
-```
-curl 7.56.0 (x86_64-pc-linux-gnu) libcurl/7.56.0 OpenSSL/1.0.2k zlib/1.2.11 nghttp2/1.26.0
-Release-Date: 2017-10-04
+```bash
+curl 7.66.0 (x86_64-alpine-linux-musl) libcurl/7.66.0 OpenSSL/1.1.1d zlib/1.2.11 nghttp2/1.39.2
+Release-Date: 2019-09-11
 Protocols: dict file ftp ftps gopher http https imap imaps pop3 pop3s rtsp smb smbs smtp smtps telnet tftp
-Features: AsynchDNS IPv6 Largefile NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSockets HTTPS-proxy
+Features: AsynchDNS HTTP2 HTTPS-proxy IPv6 Largefile libz NTLM NTLM_WB SSL TLS-SRP UnixSockets
 ```
 
 ### Debian
 
-```
-curl 7.56.0 (x86_64-pc-linux-gnu) libcurl/7.56.0 OpenSSL/1.1.0f zlib/1.2.8 libpsl/0.17.0 (+libidn2/0.16) libssh2/1.7.0 nghttp2/1.26.0 librtmp/2.3
-Release-Date: 2017-10-04
+```bash
+curl 7.64.0 (x86_64-pc-linux-gnu) libcurl/7.64.0 OpenSSL/1.1.1d zlib/1.2.11 libidn2/2.0.5 libpsl/0.20.2 (+libidn2/2.0.5) libssh2/1.8.0 nghttp2/1.36.0 librtmp/2.3
+Release-Date: 2019-02-06
 Protocols: dict file ftp ftps gopher http https imap imaps ldap ldaps pop3 pop3s rtmp rtsp scp sftp smb smbs smtp smtps telnet tftp
-Features: AsynchDNS IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSockets HTTPS-proxy PSL
+Features: AsynchDNS IDN IPv6 Largefile GSS-API Kerberos SPNEGO NTLM NTLM_WB SSL libz TLS-SRP HTTP2 UnixSockets HTTPS-proxy PSL
 ```
-
 
 ## License
 
 Unless explicitly stated to the contrary, all contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/master/LICENSE).
-
