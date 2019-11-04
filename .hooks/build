@@ -22,7 +22,7 @@ VCS_URL=`git config --get remote.origin.url | \
 DOCKER_CONTEXT=`echo "$VCS_URL/tree/$VCS_REF/$(git rev-parse --show-prefix)" | head --bytes -2`
 
 # Print custom envvars
-echo "Custom environments variables set by the build hook:"
+echo "Custom environment variables set by the build hook:"
 echo " - BUILD_DATE=$BUILD_DATE"
 echo " - DOCKER_CONTEXT=$DOCKER_CONTEXT"
 echo " - VCS_REF=$VCS_REF"
