@@ -1,0 +1,43 @@
+# Setup environment
+export LS_COLORS='no=00:fi=00:di=01;32:ln=36:pi=33:so=01;35:bd=01;33:cd=01;33:ex=01;31'
+export PAGER=most
+export ZSH=/opt/oh-my-zsh
+
+# Configure oh-my-zsh
+COMPLETION_WAITING_DOTS="true"
+DISABLE_AUTO_UPDATE="true"
+ENABLE_CORRECTION="true"
+HYPHEN_INSENSITIVE="true"
+ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&*'
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
+ZSH_THEME="oh-my-via/via"
+
+# Configure zsh plugins
+plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+
+# Source external scripts
+source $ZSH/oh-my-zsh.sh
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+
+# Enable autocompletion
+zstyle ':completion:*' rehash true
+unsetopt list_ambiguous
+autoload -U compinit && compinit -u
+
+# Create hook functions
+chpwd() ls
+preexec() date
+
+# Create aliases
+alias checkip='curl -s http://checkip.amazonaws.com/'
+alias df='df -hT'
+alias diff='colordiff -u'
+alias du='du -h'
+alias free='free -h'
+alias less='less -M'
+alias mkfile='touch'
+alias rgrep='rg'
+alias rm='rm -v'
+alias python='python3'
+
+# vim: ft=zsh fenc=utf-8
