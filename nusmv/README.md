@@ -1,6 +1,4 @@
-NuSMV
-=====
-
+# NuSMV
 
 [![](https://images.microbadger.com/badges/version/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own image badge on microbadger.com")
 
@@ -21,7 +19,6 @@ docker run -it --rm -v $PWD:/input:ro badouralix/nusmv <file>
 See [manual](http://nusmv.fbk.eu/NuSMV/userman/v26/nusmv.pdf) to learn how to
 use `nusmv`.
 
-
 ## Tips and tricks
 
 In your shell rc dotfile, you could add an
@@ -31,7 +28,6 @@ you would just have to run :
 ```bash
 nusmv <file>
 ```
-
 
 ## License
 
