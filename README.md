@@ -9,6 +9,7 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
   - [Build it yourself](#build-it-yourself)
   - [Check out only some subdirectories](#check-out-only-some-subdirectories)
   - [Tips and tricks](#tips-and-tricks)
+  - [Create a new image](#create-a-new-image)
 - [License](#license)
 
 ## Current dockerfiles
@@ -60,6 +61,12 @@ As of git version 1.7, you can check out just a subtree, using `core.sparsecheck
 ### Tips and tricks
 
 Give <https://github.com/badouralix/dockerize> a try, for painless and carefree docker build !
+
+### Create a new image
+
+```bash
+./bootstrap.sh <image_name>
+```
 
 ## License
 
