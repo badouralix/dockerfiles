@@ -6,7 +6,8 @@ RUN cd nusmv/bin && \
     ln -s NuSMV nusmv
 
 FROM alpine:3.7
-LABEL maintainer="Ayaz BADOURALY <ayaz.badouraly+docker@via.ecp.fr>"
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
+      org.opencontainers.image.description="Docker image with NuSMV and zchaff SAT solver"
 WORKDIR /input
 COPY entrypoint.sh /
 COPY --from=dl nusmv /opt/nusmv

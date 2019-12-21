@@ -1,5 +1,8 @@
 FROM debian:latest
-LABEL maintainer="ayaz.badouraly@via.ecp.fr"
+
+# Set non-built-time labels
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
+      org.opencontainers.image.description="Personal collection of useful linux tools"
 
 # Install a bunch of useful packages
 RUN apt update && \

@@ -1,5 +1,8 @@
 FROM alpine:3.4
-MAINTAINER Ayaz BADOURALY <ayaz.badouraly@via.ecp.fr>
+
+# Set non-built-time labels
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
+      org.opencontainers.image.description="Docker image for ZUnit, a powerful unit testing framework for ZSH"
 
 # Set default WORKDIR to /app
 WORKDIR /app
@@ -31,4 +34,3 @@ COPY entrypoint.sh /
 
 ENTRYPOINT ["/entrypoint.sh"]
 CMD ["zunit"]
-

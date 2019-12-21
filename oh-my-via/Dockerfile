@@ -1,5 +1,8 @@
 FROM alpine:3.4
-MAINTAINER Ayaz BADOURALY <ayaz.badouraly@via.ecp.fr>
+
+# Set non-built-time labels
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
+      org.opencontainers.image.description="Docker image to try oh-my-via zsh theme out"
 
 # Install zsh and oh-my-zsh
 # Not removing git in order to test theme prompt
