@@ -18,6 +18,9 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![](https://images.microbadger.com/badges/version/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own image badge on microbadger.com")
 
+- [deplacement-covid-19](https://hub.docker.com/r/badouralix/deplacement-covid-19/) : alpine-based docker image serving the official covid-19 générateur d'attestation de déplacement dérogatoire
+[![](https://images.microbadger.com/badges/version/badouralix/deplacement-covid-19.svg)](https://microbadger.com/images/badouralix/deplacement-covid-19 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/deplacement-covid-19.svg)](https://microbadger.com/images/badouralix/deplacement-covid-19 "Get your own image badge on microbadger.com")
+
 - [easy-blake2s](https://hub.docker.com/r/badouralix/easy-blake2s/) : alpine-based docker image to compute blake2s hashes
 [![](https://images.microbadger.com/badges/version/badouralix/easy-blake2s.svg)](https://microbadger.com/images/badouralix/easy-blake2s "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/badouralix/easy-blake2s.svg)](https://microbadger.com/images/badouralix/easy-blake2s "Get your own image badge on microbadger.com")
