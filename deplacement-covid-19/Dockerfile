@@ -1,7 +1,7 @@
 FROM node:alpine AS build
 # Install utils and chromium because why not ( postbuild and react-snap )
 # See https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md#running-on-alpine
-RUN apk add --update --no-cache chromium git jq
+RUN apk add --update --no-cache chromium git jq moreutils
 # Fetch sources
 RUN git clone --depth=1 https://github.com/LAB-MI/deplacement-covid-19.git /deplacement-covid-19
 # Setup environment
@@ -9,7 +9,7 @@ WORKDIR /deplacement-covid-19
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
 ENV PUBLIC_URL /
 # Yolo patch package.json to run build in docker
-RUN cat package.json | jq '.reactSnap.puppeteerExecutablePath="/usr/bin/chromium-browser"' | jq '.reactSnap.puppeteerArgs=["--no-sandbox", "--disable-dev-shm-usage"]' > package.json
+RUN cat package.json | jq '.reactSnap.puppeteerExecutablePath="/usr/bin/chromium-browser" | .reactSnap.puppeteerArgs=["--no-sandbox", "--disable-dev-shm-usage"]' | sponge package.json
 # Build site
 RUN npm install
 RUN VERSION=`git rev-parse --short HEAD` npm run build
