@@ -94,8 +94,8 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 
 ```bash
 git clone https://github.com/badouralix/dockerfiles.git badouralix-dockerfiles
-cd badouralix-dockerfiles/<image_name>
-docker build -t $USER-local/<image_name> .
+cd badouralix-dockerfiles/<name>
+docker build -t $USER-local/<name> .
 ```
 
 ### Check out only some subdirectories
@@ -109,7 +109,7 @@ Give <https://github.com/badouralix/dockerize> a try, for painless and carefree 
 ### Create a new image
 
 ```bash
-./bootstrap.sh <image_name>
+./bootstrap.sh <name>
 ```
 
 ## License
