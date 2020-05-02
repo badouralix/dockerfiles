@@ -14,42 +14,79 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 
 ## Current dockerfiles
 
-- [curl-http2](https://hub.docker.com/r/badouralix/curl-http2/) : alpine-based docker image for curl with http2 support \
-[![](https://images.microbadger.com/badges/version/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/badouralix/curl-http2.svg)](https://microbadger.com/images/badouralix/curl-http2 "Get your own image badge on microbadger.com")
+- [*curl-http2*](https://hub.docker.com/r/badouralix/curl-http2) - alpine-based docker image for curl with http2 support \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/curl-http2?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-http2?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-http2?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-http2?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-http2?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/curl-http2?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/curl-http2)
 
-- [deplacement-covid-19](https://hub.docker.com/r/badouralix/deplacement-covid-19/) : alpine-based docker image serving the official covid-19 générateur d'attestation de déplacement dérogatoire \
-[![](https://images.microbadger.com/badges/version/badouralix/deplacement-covid-19.svg)](https://microbadger.com/images/badouralix/deplacement-covid-19 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/deplacement-covid-19.svg)](https://microbadger.com/images/badouralix/deplacement-covid-19 "Get your own image badge on microbadger.com")
+- [*deplacement-covid-19*](https://hub.docker.com/r/badouralix/deplacement-covid-19) - alpine-based docker image serving the official covid-19 générateur d'attestation de déplacement dérogatoire \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/deplacement-covid-19?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/deplacement-covid-19?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/deplacement-covid-19?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/deplacement-covid-19?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/deplacement-covid-19?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/deplacement-covid-19?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/deplacement-covid-19)
 
-- [easy-blake2s](https://hub.docker.com/r/badouralix/easy-blake2s/) : alpine-based docker image to compute blake2s hashes \
-[![](https://images.microbadger.com/badges/version/badouralix/easy-blake2s.svg)](https://microbadger.com/images/badouralix/easy-blake2s "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/badouralix/easy-blake2s.svg)](https://microbadger.com/images/badouralix/easy-blake2s "Get your own image badge on microbadger.com")
+- [*easy-blake2s*](https://hub.docker.com/r/badouralix/easy-blake2s) - alpine-based docker image to compute blake2s hashes \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/easy-blake2s?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/easy-blake2s?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/easy-blake2s?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/easy-blake2s?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/easy-blake2s?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/easy-blake2s?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/easy-blake2s)
 
-- lustre : debian-based docker image for Lustre V4
+- *lustre* - debian-based docker image for Lustre V4
 
-- [nusmv](https://hub.docker.com/r/badouralix/curl-http2/) : alpine-based docker image with NuSMV and zchaff SAT solver \
-[![](https://images.microbadger.com/badges/version/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/badouralix/nusmv.svg)](https://microbadger.com/images/badouralix/nusmv "Get your own image badge on microbadger.com")
+- [*nusmv*](https://hub.docker.com/r/badouralix/nusmv) - alpine-based docker image with NuSMV and zchaff SAT solver \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/nusmv?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/nusmv?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/nusmv?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/nusmv?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/nusmv?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/nusmv?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/nusmv)
 
-- [oh-my-via](https://hub.docker.com/r/badouralix/oh-my-via/) : image for oh-my-via theme testing purpose \
-[![](https://images.microbadger.com/badges/version/badouralix/oh-my-via.svg)](https://microbadger.com/images/badouralix/oh-my-via "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/badouralix/oh-my-via.svg)](https://microbadger.com/images/badouralix/oh-my-via "Get your own image badge on microbadger.com")
+- [*oh-my-via*](https://hub.docker.com/r/badouralix/oh-my-via) - image for oh-my-via theme testing purpose \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/oh-my-via?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/oh-my-via?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/oh-my-via?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/oh-my-via?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/oh-my-via?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/oh-my-via?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/oh-my-via)
 
-- [python-scrapy](https://hub.docker.com/r/badouralix/python-scrapy/) : debian-based docker image for scrapy \
-[![](https://images.microbadger.com/badges/version/badouralix/python-scrapy.svg)](https://microbadger.com/images/badouralix/python-scrapy "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/badouralix/python-scrapy.svg)](https://microbadger.com/images/badouralix/python-scrapy "Get your own image badge on microbadger.com")
+- [*python-scrapy*](https://hub.docker.com/r/badouralix/python-scrapy) - debian-based docker image for scrapy \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/python-scrapy?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/python-scrapy?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/python-scrapy?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/python-scrapy?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/python-scrapy?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/python-scrapy?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/python-scrapy)
 
-- [rancher-cli](https://hub.docker.com/r/badouralix/rancher-cli/) : rancher-cli for gitlab-ci \
-[![](https://images.microbadger.com/badges/version/badouralix/rancher-cli.svg)](https://microbadger.com/images/badouralix/rancher-cli "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/badouralix/rancher-cli.svg)](https://microbadger.com/images/badouralix/rancher-cli "Get your own image badge on microbadger.com")
+- [*rancher-cli*](https://hub.docker.com/r/badouralix/rancher-cli) - rancher-cli for gitlab-ci \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/rancher-cli?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/rancher-cli?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/rancher-cli?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/rancher-cli?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/rancher-cli?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/rancher-cli?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/rancher-cli)
 
-- [toolbox](https://hub.docker.com/r/badouralix/toolbox/) : debian-based image with useful linux tools \
-[![](https://images.microbadger.com/badges/version/badouralix/toolbox.svg)](https://microbadger.com/images/badouralix/toolbox "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/badouralix/toolbox.svg)](https://microbadger.com/images/badouralix/toolbox "Get your own image badge on microbadger.com")
+- [*toolbox*](https://hub.docker.com/r/badouralix/toolbox) - debian-based image with useful linux tools \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/toolbox?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/toolbox?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/toolbox?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/toolbox?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/toolbox?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/toolbox?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/toolbox)
 
-- [zunit](https://hub.docker.com/r/badouralix/zunit/) : alpine-based image for ZUnit, a powerful unit testing framework for ZSH \
-[![](https://images.microbadger.com/badges/version/badouralix/zunit.svg)](https://microbadger.com/images/badouralix/zunit "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/badouralix/zunit.svg)](https://microbadger.com/images/badouralix/zunit "Get your own image badge on microbadger.com")
+- [*zunit*](https://hub.docker.com/r/badouralix/zunit) - alpine-based image for ZUnit, a powerful unit testing framework for ZSH \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/zunit?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/zunit?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/zunit?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/zunit?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/zunit?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/zunit?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/zunit)
 
 ## Usage
 

@@ -17,7 +17,12 @@ ln -s ../.hooks $1/hooks
 cat > $1/README.md <<EOF
 # $1
 
-[![](https://images.microbadger.com/badges/version/badouralix/$1.svg)](https://microbadger.com/images/badouralix/$1 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/badouralix/$1.svg)](https://microbadger.com/images/badouralix/$1 "Get your own image badge on microbadger.com")
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/$1?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/$1?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/$1?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/$1?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/$1?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/$1?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/$1)
 
 See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/$1/).
 

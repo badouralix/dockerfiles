@@ -1,6 +1,11 @@
 # rancher-cli
 
-[![version/badouralix/rancher-cli](https://images.microbadger.com/badges/version/badouralix/rancher-cli.svg)](https://microbadger.com/images/badouralix/rancher-cli "Get your own version badge on microbadger.com") [![image/badouralix/rancher-cli](https://images.microbadger.com/badges/image/badouralix/rancher-cli.svg)](https://microbadger.com/images/badouralix/rancher-cli "Get your own image badge on microbadger.com")
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/rancher-cli?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/rancher-cli?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/rancher-cli?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/rancher-cli?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/rancher-cli?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/rancher-cli?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/rancher-cli)
 
 This **Dockerfile** builds a docker image based on [rancher/cli](https://hub.docker.com/r/rancher/cli/), with an overridden
 `ENTRYPOINT` to handle custom `CMD`s. Useful when using, for instance,
