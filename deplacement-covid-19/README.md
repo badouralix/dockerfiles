@@ -19,7 +19,7 @@ docker run -it --rm -p 8080:80 badouralix/deplacement-covid-19
 
 Then open <http://localhost:8080> on your browser.
 
-![](https://user-images.githubusercontent.com/19719047/79073716-5e071200-7ce8-11ea-9208-9267124f2b6a.png)
+![](https://user-images.githubusercontent.com/19719047/80891148-8b7d2500-8cc2-11ea-9c2a-e907afdacfb9.png)
 
 ## Links
 
