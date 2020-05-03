@@ -2,4 +2,7 @@
     "markdownlint.config": {
         "MD045": false,
     },
+    "[dockerfile]": {
+        "editor.insertSpaces": false,
+    }
 }
