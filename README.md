@@ -64,6 +64,8 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/python-scrapy?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/python-scrapy?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/python-scrapy)
 
+- *r-languageserver* - multi-base docker images with r and r-languageserver
+
 - [*rancher-cli*](https://hub.docker.com/r/badouralix/rancher-cli) - rancher-cli for gitlab-ci \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/rancher-cli?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/rancher-cli?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
