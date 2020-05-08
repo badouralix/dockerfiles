@@ -6,10 +6,9 @@ LABEL org.opencontainers.image.description="Docker image for curl with http2 sup
 
 # Install curl package as nowadays it comes with http2 support
 RUN apt update && \
-	apt install --assume-yes --no-install-recommends \
-		curl && \
-	apt clean && \
-	rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
+	apt install --assume-yes --no-install-recommends curl && \
+	rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
+	rm -rf /tmp/* /var/tmp/*
 
 # Setup entrypoint and cmd
 COPY entrypoint.sh /

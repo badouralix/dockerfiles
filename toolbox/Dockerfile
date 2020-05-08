@@ -38,8 +38,8 @@ RUN apt update && \
 		vim \
 		zsh \
 		&& \
-	apt clean && \
-	rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
+	rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
+	rm -rf /tmp/* /var/tmp/*
 
 # Install oh-my-via
 RUN git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \

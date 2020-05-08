@@ -11,9 +11,10 @@ RUN apt update && \
 		libcurl4-openssl-dev \
 		libssl-dev \
 		libxml2-dev \
-		r-base && \
-	apt clean && \
-	rm -rf /tmp/* /var/cache/apt/archives/* /var/lib/apt/lists/* /var/tmp/*
+		r-base \
+		&& \
+	rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
+	rm -rf /tmp/* /var/tmp/*
 
 # Install languageserver package
 RUN Rscript -e 'install.packages("languageserver", repos="https://cloud.r-project.org/")'

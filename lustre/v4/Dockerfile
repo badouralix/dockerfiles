@@ -6,10 +6,9 @@ LABEL org.opencontainers.image.description="Docker image yolo built for computer
 
 # Install utils
 RUN apt-get update && \
-	apt-get install --assume-yes --no-install-recommends \
-		build-essential wget && \
-	apt-get clean && \
-	rm -rf /var/cache/apt/archives/* /var/lib/apt/lists/* /tmp/* /var/tmp/*
+	apt-get install --assume-yes --no-install-recommends build-essential wget && \
+	rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
+	rm -rf /tmp/* /var/tmp/*
 
 # Install lustre
 ENV LUSTRE_INSTALL /opt/lustre

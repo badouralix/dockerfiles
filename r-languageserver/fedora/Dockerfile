@@ -10,7 +10,8 @@ RUN dnf install --assumeyes --setopt=install_weak_deps=False \
 		libcurl-devel \
 		libxml2-devel \
 		openssl-devel \
-		R && \
+		R \
+		&& \
 	dnf clean all && \
 	rm -rf /tmp/* /var/cache/dnf/* /var/tmp/*
 
