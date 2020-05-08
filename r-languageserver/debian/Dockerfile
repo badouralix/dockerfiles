@@ -1,8 +1,8 @@
 FROM debian:latest
 
 # Set non-built-time labels
-LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
-      org.opencontainers.image.description="Only R with its languageserver"
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
+LABEL org.opencontainers.image.description="Only R with its languageserver"
 
 # Install languageserver dependencies
 RUN apt update && \

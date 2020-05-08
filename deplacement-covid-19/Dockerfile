@@ -16,7 +16,7 @@ RUN VERSION=`git rev-parse --short HEAD` npm run build
 
 FROM nginx:alpine
 # Set non-built-time labels
-LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
-      org.opencontainers.image.description="Standalone version of https://media.interieur.gouv.fr/deplacement-covid-19/"
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
+LABEL org.opencontainers.image.description="Standalone version of https://media.interieur.gouv.fr/deplacement-covid-19/"
 # Retrieve static files from build stage
 COPY --from=build /deplacement-covid-19/dist /usr/share/nginx/html

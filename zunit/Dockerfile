@@ -1,8 +1,8 @@
 FROM alpine:3.4
 
 # Set non-built-time labels
-LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
-      org.opencontainers.image.description="Docker image for ZUnit, a powerful unit testing framework for ZSH"
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
+LABEL org.opencontainers.image.description="Docker image for ZUnit, a powerful unit testing framework for ZSH"
 
 # Set default WORKDIR to /app
 WORKDIR /app

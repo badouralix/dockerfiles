@@ -1,7 +1,7 @@
 FROM debian:buster
 
-LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
-      org.opencontainers.image.description="Docker image for scrapy"
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
+LABEL org.opencontainers.image.description="Docker image for scrapy"
 
 RUN apt-get update && \
 	apt-get install --assume-yes --no-install-recommends \

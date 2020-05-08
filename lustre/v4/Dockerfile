@@ -1,8 +1,8 @@
 FROM debian:jessie
 
 # Set non-built-time labels
-LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
-      org.opencontainers.image.description="Docker image yolo built for computer sciences courses"
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
+LABEL org.opencontainers.image.description="Docker image yolo built for computer sciences courses"
 
 # Install utils
 RUN apt-get update && \

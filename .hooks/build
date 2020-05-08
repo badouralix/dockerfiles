@@ -31,10 +31,10 @@ echo " - REVISION_SHORT=$REVISION_SHORT"
 echo " - SOURCE=$SOURCE"
 
 # Patch the Dockerfile ( see http://label-schema.org/ )
-echo "LABEL org.opencontainers.image.created=$BUILD_DATE \\"                     >> Dockerfile
-echo "      org.opencontainers.image.documentation=$DOCKER_CONTEXT/README.md \\" >> Dockerfile
-echo "      org.opencontainers.image.revision=$REVISION_LONG \\"                 >> Dockerfile
-echo "      org.opencontainers.image.source=$SOURCE"                             >> Dockerfile
+echo "LABEL org.opencontainers.image.created=$BUILD_DATE"                     >> Dockerfile
+echo "LABEL org.opencontainers.image.documentation=$DOCKER_CONTEXT/README.md" >> Dockerfile
+echo "LABEL org.opencontainers.image.revision=$REVISION_LONG"                 >> Dockerfile
+echo "LABEL org.opencontainers.image.source=$SOURCE"                          >> Dockerfile
 
 # Start building
 echo "Build hook running"

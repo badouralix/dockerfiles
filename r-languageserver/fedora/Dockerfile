@@ -1,8 +1,8 @@
 FROM fedora:latest
 
 # Set non-built-time labels
-LABEL org.opencontainers.image.authors="Ayaz BADOURALY" \
-      org.opencontainers.image.description="Only R with its languageserver"
+LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
+LABEL org.opencontainers.image.description="Only R with its languageserver"
 
 # Install languageserver dependencies
 RUN dnf install --assumeyes --setopt=install_weak_deps=False \

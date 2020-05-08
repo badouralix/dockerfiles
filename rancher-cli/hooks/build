@@ -29,11 +29,11 @@ echo " - VCS_REF=$VCS_REF"
 echo " - VCS_URL=$VCS_URL"
 
 # Patch the Dockerfile ( see http://label-schema.org/ )
-echo "LABEL org.label-schema.build-date=$BUILD_DATE \\"         >> Dockerfile
-echo "      org.label-schema.docker.context=$DOCKER_CONTEXT \\" >> Dockerfile
-echo "      org.label-schema.vcs-ref=$VCS_REF \\"               >> Dockerfile
-echo "      org.label-schema.vcs-url=$VCS_URL \\"               >> Dockerfile
-echo "      org.label-schema.schema-version=1.0.0-rc.1"         >> Dockerfile
+echo "LABEL org.label-schema.build-date=$BUILD_DATE"         >> Dockerfile
+echo "LABEL org.label-schema.docker.context=$DOCKER_CONTEXT" >> Dockerfile
+echo "LABEL org.label-schema.vcs-ref=$VCS_REF"               >> Dockerfile
+echo "LABEL org.label-schema.vcs-url=$VCS_URL"               >> Dockerfile
+echo "LABEL org.label-schema.schema-version=1.0.0-rc.1"      >> Dockerfile
 
 # Update base image with current tag
 CUSTOM_TAG=`docker run --rm gempesaw/curl-jq sh -c \
