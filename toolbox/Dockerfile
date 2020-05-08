@@ -5,39 +5,39 @@ LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
 LABEL org.opencontainers.image.description="Personal collection of useful linux tools"
 
 # Install a bunch of useful packages
-RUN apt update && \
-	apt install --assume-yes --no-install-recommends \
-		build-essential \
-		ca-certificates \
-		curl \
-		dnsutils \
-		fzf \
-		git \
-		htop \
-		less \
-		locate \
-		lsof \
-		man-db \
-		most \
-		# mtr \
-		netcat \
-		net-tools \
-		nmap \
-		psmisc \
-		python3 \
-		ripgrep \
-		socat \
-		ssh \
-		strace \
-		stress \
-		sysstat \
-		tcpdump \
-		tini \
-		tldr \
-		traceroute \
-		vim \
-		zsh \
-		&& \
+RUN apt-get update && \
+	apt-get install --assume-yes --no-install-recommends \
+			build-essential \
+			ca-certificates \
+			curl \
+			dnsutils \
+			fzf \
+			git \
+			htop \
+			less \
+			locate \
+			lsof \
+			man-db \
+			most \
+			# mtr \
+			netcat \
+			net-tools \
+			nmap \
+			psmisc \
+			python3 \
+			ripgrep \
+			socat \
+			ssh \
+			strace \
+			stress \
+			sysstat \
+			tcpdump \
+			tini \
+			tldr \
+			traceroute \
+			vim \
+			zsh \
+			&& \
 	rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
 	rm -rf /tmp/* /var/tmp/*
 
