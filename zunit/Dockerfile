@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:latest
 
 # Set non-built-time labels
 LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
@@ -8,13 +8,10 @@ LABEL org.opencontainers.image.description="Docker image for ZUnit, a powerful u
 WORKDIR /app
 
 # Install zsh and utils
-RUN apk add --update --no-cache \
-		ncurses \
-		zsh && \
-	rm -rf /var/cache/apk/*
+RUN apk add --no-cache ncurses zsh
 
 # Install zunit and dependencies
-RUN apk add --update --no-cache --virtual build-dependencies \
+RUN apk add --no-cache --virtual build-dependencies \
 		git && \
 	git clone --depth=1 https://github.com/molovo/color /tmp/color && \
 		cp /tmp/color/color.zsh /usr/local/bin/color && \
@@ -27,7 +24,7 @@ RUN apk add --update --no-cache --virtual build-dependencies \
 		cp /tmp/zunit/zunit /usr/local/bin/zunit && \
 		chmod +x /usr/local/bin/zunit && \
 	apk del build-dependencies && \
-	rm -rf /tmp/* /var/cache/apk/*
+	rm -rf /tmp/* /var/tmp/*
 
 # Set default ENTRYPOINT and CMD
 COPY entrypoint.sh /

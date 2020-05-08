@@ -1,7 +1,7 @@
 FROM node:alpine AS build
 # Install utils and chromium because why not ( postbuild and react-snap )
 # See https://github.com/puppeteer/puppeteer/blob/master/docs/troubleshooting.md#running-on-alpine
-RUN apk add --update --no-cache chromium g++ git jq make moreutils python3
+RUN apk add --no-cache chromium g++ git jq make moreutils python3
 # Fetch sources
 RUN git clone --depth=1 https://github.com/LAB-MI/deplacement-covid-19.git /deplacement-covid-19
 # Setup environment

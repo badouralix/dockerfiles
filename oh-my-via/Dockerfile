@@ -1,4 +1,4 @@
-FROM alpine:3.4
+FROM alpine:latest
 
 # Set non-built-time labels
 LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
@@ -6,10 +6,10 @@ LABEL org.opencontainers.image.description="Docker image to try oh-my-via zsh th
 
 # Install zsh and oh-my-zsh
 # Not removing git in order to test theme prompt
-RUN apk add --update --no-cache \
+RUN apk add --no-cache \
 		git \
-		zsh && \
-	rm -rf /var/cache/apk/* && \
+		zsh \
+		&& \
 	git clone --depth=1 git://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
 	mkdir -p /etc/skel && touch /etc/skel/.zshrc && \
 	adduser -Ds /bin/zsh user
@@ -19,5 +19,5 @@ RUN git clone --depth=1 https://github.com/badouralix/oh-my-via.git /opt/oh-my-z
 
 COPY zshrc /etc/zsh/zshrc
 
+# Setup entrypoint and cmd
 ENTRYPOINT ["/bin/zsh"]
-
