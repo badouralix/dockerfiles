@@ -6,47 +6,47 @@ LABEL org.opencontainers.image.description="Personal collection of useful linux 
 
 # Install a bunch of useful packages
 RUN apt-get update && \
-	apt-get install --assume-yes --no-install-recommends \
-			build-essential \
-			ca-certificates \
-			curl \
-			dnsutils \
-			fzf \
-			git \
-			htop \
-			less \
-			locate \
-			lsof \
-			man-db \
-			most \
-			# mtr \
-			netcat \
-			net-tools \
-			nmap \
-			psmisc \
-			python3 \
-			ripgrep \
-			socat \
-			ssh \
-			strace \
-			stress \
-			sysstat \
-			tcpdump \
-			tini \
-			tldr \
-			traceroute \
-			vim \
-			zsh \
-			&& \
-	rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
-	rm -rf /tmp/* /var/tmp/*
+    apt-get install --assume-yes --no-install-recommends \
+            build-essential \
+            ca-certificates \
+            curl \
+            dnsutils \
+            fzf \
+            git \
+            htop \
+            less \
+            locate \
+            lsof \
+            man-db \
+            most \
+            # mtr \
+            netcat \
+            net-tools \
+            nmap \
+            psmisc \
+            python3 \
+            ripgrep \
+            socat \
+            ssh \
+            strace \
+            stress \
+            sysstat \
+            tcpdump \
+            tini \
+            tldr \
+            traceroute \
+            vim \
+            zsh \
+            && \
+    rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
+    rm -rf /tmp/* /var/tmp/*
 
 # Install oh-my-via
 RUN git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
-	git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git /opt/oh-my-zsh/custom/plugins/zsh-autosuggestions && \
-	git clone --depth=1 https://github.com/zsh-users/zsh-completions.git /opt/oh-my-zsh/custom/plugins/zsh-completions && \
-	git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git /opt/oh-my-zsh/custom/plugins/zsh-syntax-highlighting && \
-	git clone --depth=1 https://github.com/badouralix/oh-my-via.git /opt/oh-my-zsh/custom/themes/oh-my-via
+    git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git /opt/oh-my-zsh/custom/plugins/zsh-autosuggestions && \
+    git clone --depth=1 https://github.com/zsh-users/zsh-completions.git /opt/oh-my-zsh/custom/plugins/zsh-completions && \
+    git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git /opt/oh-my-zsh/custom/plugins/zsh-syntax-highlighting && \
+    git clone --depth=1 https://github.com/badouralix/oh-my-via.git /opt/oh-my-zsh/custom/themes/oh-my-via
 
 # Upload config files
 COPY zshrc /root/.zshrc
