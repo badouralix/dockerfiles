@@ -24,17 +24,17 @@ reasons.
 
 ## OCI Image Spec
 
-| Label Key                                |   Source    |
-| :--------------------------------------- | :---------: |
-| `org.opencontainers.image.authors`       | Dockerfile  |
-| `org.opencontainers.image.created`       | hooks/build |
-| `org.opencontainers.image.description`   | Dockerfile  |
-| `org.opencontainers.image.documentation` | hooks/build |
-| `org.opencontainers.image.licenses`      |             |
-| `org.opencontainers.image.ref.name`      |             |
-| `org.opencontainers.image.revision`      | hooks/build |
-| `org.opencontainers.image.source`        | hooks/build |
-| `org.opencontainers.image.title`         |             |
-| `org.opencontainers.image.url`           |             |
-| `org.opencontainers.image.vendor`        |             |
-| `org.opencontainers.image.version`       |             |
+| Label Key                                |       Source        |
+| :--------------------------------------- | :-----------------: |
+| `org.opencontainers.image.authors`       |     Dockerfile      |
+| `org.opencontainers.image.created`       | hooks/post_checkout |
+| `org.opencontainers.image.description`   |     Dockerfile      |
+| `org.opencontainers.image.documentation` | hooks/post_checkout |
+| `org.opencontainers.image.licenses`      |                     |
+| `org.opencontainers.image.ref.name`      |                     |
+| `org.opencontainers.image.revision`      | hooks/post_checkout |
+| `org.opencontainers.image.source`        | hooks/post_checkout |
+| `org.opencontainers.image.title`         |                     |
+| `org.opencontainers.image.url`           |                     |
+| `org.opencontainers.image.vendor`        |                     |
+| `org.opencontainers.image.version`       |                     |

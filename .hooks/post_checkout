@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# This file overrides the `build` command during automated build process. For further infomation,
-# see  https://docs.docker.com/docker-cloud/builds/advanced/#override-build-test-or-push-commands
+# This file implements a `post_checkout` hook executed during automated builds.
+# See https://docs.docker.com/docker-hub/builds/advanced/#custom-build-phase-hooks
 #
 
 # Print envvars
@@ -17,13 +17,11 @@ echo " - IMAGE_NAME=$IMAGE_NAME"
 BUILD_DATE=`date -u +"%Y-%m-%dT%H:%M:%SZ"`
 REVISION_LONG=`git rev-parse HEAD`
 REVISION_SHORT=`git rev-parse --short HEAD`
-SOURCE=`git config --get remote.origin.url | \
-         sed -r "s,^git@(.*):(.*)$,https://\1/\2," | \
-         sed -r "s,^(.*)\.git$,\1,"`
+SOURCE=`git config --get remote.origin.url | sed -r "s,^git@(.*):(.*)$,https://\1/\2," | sed -r "s,^(.*)\.git$,\1,"`
 DOCKER_CONTEXT=`echo "$SOURCE/tree/$REVISION_SHORT/$(git rev-parse --show-prefix)" | head --bytes -2`
 
 # Print custom envvars
-echo "Custom environment variables set by the build hook:"
+echo "Custom environment variables set by the post_checkout hook:"
 echo " - BUILD_DATE=$BUILD_DATE"
 echo " - DOCKER_CONTEXT=$DOCKER_CONTEXT"
 echo " - REVISION_LONG=$REVISION_LONG"
@@ -35,7 +33,3 @@ echo "LABEL org.opencontainers.image.created=$BUILD_DATE"                     >>
 echo "LABEL org.opencontainers.image.documentation=$DOCKER_CONTEXT/README.md" >> Dockerfile
 echo "LABEL org.opencontainers.image.revision=$REVISION_LONG"                 >> Dockerfile
 echo "LABEL org.opencontainers.image.source=$SOURCE"                          >> Dockerfile
-
-# Start building
-echo "Build hook running"
-docker build -t $IMAGE_NAME .
