@@ -5,7 +5,7 @@
 #
 
 # Set custom envvars
-CUSTOM_TAG=`docker run --rm gempesaw/curl-jq sh -c "curl -s https://hub.docker.com/v2/repositories/rancher/cli/tags/ | jq -r '.results[1].name'"`
+CUSTOM_TAG=`docker run --rm badouralix/curl-jq sh -c "curl -s https://hub.docker.com/v2/repositories/rancher/cli/tags/ | jq -r '.results[1].name'"`
 
 # Print custom envvars
 echo "Custom environment variables set by the pre_build hook:"
