@@ -22,6 +22,14 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-http2?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/curl-http2?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/curl-http2)
 
+- [*curl-jq*](https://hub.docker.com/r/badouralix/curl-jq) - alpine-based docker image with `curl` and `jq` \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/curl-jq?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-jq?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-jq?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-jq?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-jq?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/curl-jq?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/curl-jq)
+
 - [*deplacement-covid-19*](https://hub.docker.com/r/badouralix/deplacement-covid-19) - alpine-based docker image serving the official covid-19 générateur d'attestation de déplacement dérogatoire \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/deplacement-covid-19?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/deplacement-covid-19?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
