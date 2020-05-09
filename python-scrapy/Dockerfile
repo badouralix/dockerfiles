@@ -17,10 +17,10 @@ RUN apt-get update && \
     rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
     rm -rf /tmp/* /var/tmp/*
 
-RUN python3 -m pip install --upgrade \
+RUN python3 -m pip install --no-cache-dir --upgrade \
         setuptools \
         wheel \
         && \
-    python3 -m pip install --upgrade scrapy
+    python3 -m pip install --no-cache-dir --upgrade scrapy
 
 CMD ["scrapy", "shell", "--nolog"]
