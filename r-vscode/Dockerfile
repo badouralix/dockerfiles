@@ -32,7 +32,7 @@ RUN apt-get update && \
     /bin/bash /tmp/common-setup.sh "$INSTALL_ZSH" "$USERNAME" "$USER_UID" "$USER_GID" && \
     rm /tmp/common-setup.sh && \
     #
-    # Install r-base, r-languageserver and radian dependencies
+    # Install r-base, r-languageserver and radian dependencies, along with tini
     apt-get install --assume-yes --no-install-recommends \
             build-essential \
             gnupg \
@@ -42,6 +42,7 @@ RUN apt-get update && \
             libz-dev \
             python3 \
             python3-pip \
+            tini \
             && \
     #
     # Clean up
@@ -75,4 +76,5 @@ RUN APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true apt-key adv --keyserver keys.gnupg
 ENV DEBIAN_FRONTEND=dialog
 
 # Setup entrypoint and cmd
+ENTRYPOINT [ "tini" ]
 CMD [ "sleep", "inf" ]
