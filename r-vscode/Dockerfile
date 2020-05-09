@@ -64,8 +64,8 @@ RUN APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true apt-key adv --keyserver keys.gnupg
     Rscript -e 'install.packages("languageserver", repos="https://cloud.r-project.org/")' && \
     #
     # Install radian
-    python3 -m pip install --upgrade setuptools wheel && \
-    python3 -m pip install --upgrade radian && \
+    python3 -m pip install --no-cache-dir --upgrade setuptools wheel && \
+    python3 -m pip install --no-cache-dir --upgrade radian && \
     #
     # Clean up
     rm -rf /var/cache/apt/* var/lib/apt/lists/* && \
