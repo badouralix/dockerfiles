@@ -4,10 +4,6 @@ FROM debian:buster
 LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
 LABEL org.opencontainers.image.description="Remote container for R programming with vscode"
 
-# Set R_VARIANT build arg to override the R version to be used
-# 40 for R 4.0 (default), 35 for R 3.5
-ARG R_VARIANT=40
-
 # This Dockerfile adds a non-root user with sudo access. Use the "remoteUser"
 # property in devcontainer.json to use it. On Linux, the container user's GID/UIDs
 # will be updated to match your local UID/GID (when using the dockerFile property).
@@ -36,10 +32,6 @@ RUN apt-get update && \
     /bin/bash /tmp/common-setup.sh "$INSTALL_ZSH" "$USERNAME" "$USER_UID" "$USER_GID" && \
     rm /tmp/common-setup.sh && \
     #
-    # *********************************************************************
-    # * Uncomment this section to use RUN to install other dependencies.  *
-    # * See https://aka.ms/vscode-remote/containers/dockerfile-run        *
-    # *********************************************************************
     # Install r-base, r-languageserver and radian dependencies
     apt-get install --assume-yes --no-install-recommends \
             build-essential \
@@ -51,13 +43,26 @@ RUN apt-get update && \
             python3 \
             python3-pip \
             && \
+    #
+    # Clean up
+    rm -rf /var/cache/apt/* var/lib/apt/lists/* && \
+    rm -rf /tmp/* /var/tmp/*
+
+# Set R_VARIANT build arg to override the R version to be used
+# 40 for R 4.0 (default), 35 for R 3.6
+ARG R_VARIANT=40
+
+# Split installation in different layers to leverage caching
+RUN APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true apt-key adv --keyserver keys.gnupg.net --recv-key "E19F5F87128899B192B1A2C2AD5F960A256A04AF" && \
+    #
     # Install r-base from https://cloud.r-project.org/bin/linux/debian/
-    APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true apt-key adv --keyserver keys.gnupg.net --recv-key "E19F5F87128899B192B1A2C2AD5F960A256A04AF" && \
     echo "deb http://cloud.r-project.org/bin/linux/debian buster-cran$R_VARIANT/" > /etc/apt/sources.list.d/r-project.list && \
     apt-get update && \
     apt-get install --assume-yes --target-release buster-cran$R_VARIANT r-base && \
+    #
     # Install r-languageserver
     Rscript -e 'install.packages("languageserver", repos="https://cloud.r-project.org/")' && \
+    #
     # Install radian
     python3 -m pip install --upgrade setuptools wheel && \
     python3 -m pip install --upgrade radian && \
