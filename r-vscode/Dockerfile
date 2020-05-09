@@ -4,6 +4,10 @@ FROM debian:buster
 LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
 LABEL org.opencontainers.image.description="Remote container for R programming with vscode"
 
+# Set R_VARIANT build arg to override the R version to be used
+# 40 for R 4.0 (default), 35 for R 3.5
+ARG R_VARIANT=40
+
 # This Dockerfile adds a non-root user with sudo access. Use the "remoteUser"
 # property in devcontainer.json to use it. On Linux, the container user's GID/UIDs
 # will be updated to match your local UID/GID (when using the dockerFile property).
@@ -49,9 +53,9 @@ RUN apt-get update && \
             && \
     # Install r-base from https://cloud.r-project.org/bin/linux/debian/
     APT_KEY_DONT_WARN_ON_DANGEROUS_USAGE=true apt-key adv --keyserver keys.gnupg.net --recv-key "E19F5F87128899B192B1A2C2AD5F960A256A04AF" && \
-    echo "deb http://cloud.r-project.org/bin/linux/debian buster-cran40/" > /etc/apt/sources.list.d/r-project.list && \
+    echo "deb http://cloud.r-project.org/bin/linux/debian buster-cran$R_VARIANT/" > /etc/apt/sources.list.d/r-project.list && \
     apt-get update && \
-    apt-get install --assume-yes --target-release buster-cran40 r-base && \
+    apt-get install --assume-yes --target-release buster-cran$R_VARIANT r-base && \
     # Install r-languageserver
     Rscript -e 'install.packages("languageserver", repos="https://cloud.r-project.org/")' && \
     # Install radian
