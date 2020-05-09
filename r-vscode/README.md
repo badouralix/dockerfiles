@@ -15,7 +15,7 @@ See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/r-vscode/).
 
 ```bash
 # In your R project folder
-docker run -d --rm -v $PWD:/workspaces/${PWD##*/} badouralix/r-vscode sleep inf
+docker run -d --rm -v $PWD:/workspaces/${PWD##*/} badouralix/r-vscode
 ```
 
 Then vscode can attach to the running container
