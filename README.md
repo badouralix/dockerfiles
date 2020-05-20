@@ -74,14 +74,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 
 - *r-languageserver* - multi-base docker images with R and R-languageserver
 
-- [*r-vscode*](https://hub.docker.com/r/badouralix/r-vscode) - remote container for R programming with vscode \
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/r-vscode?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-vscode)
-[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/r-vscode?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-vscode)
-[![Docker Stars](https://img.shields.io/docker/stars/badouralix/r-vscode?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-vscode)
-[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/r-vscode?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-vscode)
-[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/r-vscode?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-vscode)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/r-vscode?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/r-vscode)
-
 - [*rancher-cli*](https://hub.docker.com/r/badouralix/rancher-cli) - rancher-cli for gitlab-ci \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/rancher-cli?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/rancher-cli?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
