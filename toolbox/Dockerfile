@@ -31,6 +31,7 @@ RUN apt-get update && \
             ssh \
             strace \
             stress \
+            stress-ng \
             sysstat \
             tcpdump \
             tini \
