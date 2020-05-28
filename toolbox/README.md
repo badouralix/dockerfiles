@@ -19,6 +19,44 @@ Embedded tools mostly come from <https://blog.stackpath.com/linux-monitoring-too
 docker run -it --rm badouralix/toolbox
 ```
 
+## Content
+
+This toolbox contains the following deb packages :
+
+```text
+build-essential
+ca-certificates
+curl
+dnsutils
+fzf
+git
+htop
+less
+locate
+lsof
+man-db
+most
+net-tools
+netcat
+nmap
+parallel
+psmisc
+python3
+ripgrep
+socat
+ssh
+strace
+stress
+stress-ng
+sysstat
+tcpdump
+tini
+tldr
+traceroute
+vim
+zsh
+```
+
 ## License
 
 All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/master/LICENSE)

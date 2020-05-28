@@ -20,8 +20,8 @@ RUN apt-get update && \
             man-db \
             most \
             # mtr \
-            netcat \
             net-tools \
+            netcat \
             nmap \
             parallel \
             psmisc \
