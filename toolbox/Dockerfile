@@ -23,6 +23,7 @@ RUN apt-get update && \
             netcat \
             net-tools \
             nmap \
+            parallel \
             psmisc \
             python3 \
             ripgrep \
