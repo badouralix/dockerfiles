@@ -41,6 +41,7 @@ netcat
 nmap
 parallel
 psmisc
+pv
 python3
 ripgrep
 socat

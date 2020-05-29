@@ -25,6 +25,7 @@ RUN apt-get update && \
             nmap \
             parallel \
             psmisc \
+            pv \
             python3 \
             ripgrep \
             socat \
