@@ -12,5 +12,5 @@ WORKDIR /input
 COPY entrypoint.sh /
 COPY --from=dl nusmv /opt/nusmv
 ENV PATH="/opt/nusmv/bin:${PATH}"
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["nusmv"]
+ENTRYPOINT [ "/entrypoint.sh" ]
+CMD [ "nusmv" ]

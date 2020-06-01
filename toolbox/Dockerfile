@@ -55,5 +55,5 @@ RUN git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my
 COPY zshrc /root/.zshrc
 
 # Override entrypoint and default command
-ENTRYPOINT ["tini"]
+ENTRYPOINT [ "tini", "--" ]
 CMD [ "/usr/bin/zsh" ]

@@ -23,4 +23,4 @@ RUN python3 -m pip install --no-cache-dir --upgrade \
         && \
     python3 -m pip install --no-cache-dir --upgrade scrapy
 
-CMD ["scrapy", "shell", "--nolog"]
+CMD [ "scrapy", "shell", "--nolog" ]

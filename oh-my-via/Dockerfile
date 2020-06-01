@@ -22,5 +22,5 @@ RUN git clone --depth=1 https://github.com/badouralix/oh-my-via.git /opt/oh-my-z
 COPY zshrc /etc/zsh/zshrc
 
 # Setup entrypoint and cmd
-ENTRYPOINT ["tini", "--"]
+ENTRYPOINT [ "tini", "--" ]
 CMD [ "/bin/zsh" ]

@@ -20,6 +20,6 @@ RUN mkdir -p ${LUSTRE_INSTALL} && \
 
 WORKDIR /app
 
-#ENTRYPOINT ["/bin/bash"]
-CMD ["/bin/bash"]
+#ENTRYPOINT [ "/bin/bash" ]
+CMD [ "/bin/bash" ]
 

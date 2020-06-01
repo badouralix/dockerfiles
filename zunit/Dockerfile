@@ -29,5 +29,5 @@ RUN apk add --no-cache --virtual build-dependencies \
 # Set default ENTRYPOINT and CMD
 COPY entrypoint.sh /
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["zunit"]
+ENTRYPOINT [ "/entrypoint.sh" ]
+CMD [ "zunit" ]

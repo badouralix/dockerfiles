@@ -20,4 +20,4 @@ RUN apk add --no-cache \
 RUN Rscript -e 'install.packages("languageserver", repos="https://cloud.r-project.org/")'
 
 # Setup entrypoint and cmd
-CMD ["R"]
+CMD [ "R" ]

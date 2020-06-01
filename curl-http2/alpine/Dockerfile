@@ -10,5 +10,5 @@ RUN apk add --no-cache curl
 # Setup entrypoint and cmd
 COPY entrypoint.sh /
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["curl", "--http2"]
+ENTRYPOINT [ "/entrypoint.sh" ]
+CMD [ "curl", "--http2" ]

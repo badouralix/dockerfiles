@@ -5,4 +5,4 @@ LABEL org.opencontainers.image.description="rancher-cli for gitlab-ci"
 
 COPY entrypoint.sh /
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT [ "/entrypoint.sh" ]

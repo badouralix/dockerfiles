@@ -13,5 +13,5 @@ RUN apt-get update && \
 # Setup entrypoint and cmd
 COPY entrypoint.sh /
 
-ENTRYPOINT ["/entrypoint.sh"]
-CMD ["curl", "--http2"]
+ENTRYPOINT [ "/entrypoint.sh" ]
+CMD [ "curl", "--http2" ]

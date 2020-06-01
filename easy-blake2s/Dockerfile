@@ -9,4 +9,4 @@ COPY easy-blake2s.py /usr/local/bin/easy-blake2s
 COPY entrypoint.sh /
 
 # Setup entrypoint and cmd
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT [ "/entrypoint.sh" ]

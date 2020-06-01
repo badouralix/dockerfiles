@@ -19,4 +19,4 @@ RUN dnf install --assumeyes --setopt=install_weak_deps=False \
 RUN Rscript -e 'install.packages("languageserver", repos="https://cloud.r-project.org/")'
 
 # Setup entrypoint and cmd
-CMD ["R"]
+CMD [ "R" ]
