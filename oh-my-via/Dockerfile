@@ -9,6 +9,7 @@ LABEL org.opencontainers.image.description="Docker image to try oh-my-via zsh th
 RUN apk add --no-cache \
         git \
         zsh \
+        zsh-vcs \
         && \
     git clone --depth=1 git://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
     mkdir -p /etc/skel && touch /etc/skel/.zshrc && \

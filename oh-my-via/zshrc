@@ -10,4 +10,3 @@ ZSH_THEME="oh-my-via/via"
 source $ZSH/oh-my-zsh.sh
 
 # vim: ft=zsh fenc=utf-8
-
