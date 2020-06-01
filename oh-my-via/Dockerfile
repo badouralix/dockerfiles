@@ -8,6 +8,7 @@ LABEL org.opencontainers.image.description="Docker image to try oh-my-via zsh th
 # Not removing git in order to test theme prompt
 RUN apk add --no-cache \
         git \
+        tini \
         zsh \
         zsh-vcs \
         && \
@@ -21,4 +22,5 @@ RUN git clone --depth=1 https://github.com/badouralix/oh-my-via.git /opt/oh-my-z
 COPY zshrc /etc/zsh/zshrc
 
 # Setup entrypoint and cmd
-ENTRYPOINT ["/bin/zsh"]
+ENTRYPOINT ["tini", "--"]
+CMD [ "/bin/zsh" ]
