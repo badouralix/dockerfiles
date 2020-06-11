@@ -36,6 +36,7 @@ locate
 lsof
 man-db
 most
+mtr-tiny
 net-tools
 netcat
 nmap

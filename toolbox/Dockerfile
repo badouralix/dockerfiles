@@ -19,7 +19,7 @@ RUN apt-get update && \
             lsof \
             man-db \
             most \
-            # mtr \
+            mtr-tiny \
             net-tools \
             netcat \
             nmap \
