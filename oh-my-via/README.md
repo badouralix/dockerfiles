@@ -13,7 +13,7 @@ See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/oh-my-via/).
 
 ## Preview
 
-![Oh-My-VIA theme preview](https://user-images.githubusercontent.com/19719047/83419205-00a85b00-a425-11ea-861b-1ad1a957f11c.png "Oh-My-VIA theme preview")
+![Oh-My-VIA theme preview](https://user-images.githubusercontent.com/19719047/85171739-db627c00-b26f-11ea-94ef-8f1f87929c47.png "Oh-My-VIA theme preview")
 
 ## Usage
 
