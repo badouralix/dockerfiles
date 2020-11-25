@@ -1,0 +1,8 @@
+#!/bin/bash
+#
+# This file provides  a post push rule  for an automated build process.  For further infomation,
+# see https://docs.docker.com/docker-cloud/builds/advanced/#override-build-test-or-push-commands
+#
+
+docker tag $IMAGE_NAME "$DOCKER_REPO:alpine"
+docker push "$DOCKER_REPO:alpine"
