@@ -1,4 +1,3 @@
 #!/bin/bash
 
 exec /bin/bash ../../.hooks/post_checkout
-

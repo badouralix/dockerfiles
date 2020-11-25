@@ -6,4 +6,3 @@
 
 docker tag $IMAGE_NAME "$DOCKER_REPO:alpine"
 docker push "$DOCKER_REPO:alpine"
-
