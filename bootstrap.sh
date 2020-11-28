@@ -4,13 +4,13 @@
 set -euxo pipefail
 
 # Create image folder
-mkdir $1
+mkdir -p $1/latest
 
 # Create an empty dockerfile
-touch $1/Dockerfile
+touch $1/latest/Dockerfile
 
 # Link hooks used by dockerhub
-ln -s ../.hooks $1/hooks
+ln -s ../../.hooks $1/latest/hooks
 
 # Create default readme
 # See syntax in http://tldp.org/LDP/abs/html/here-docs.html
@@ -37,12 +37,21 @@ docker run -it --rm badouralix/$1
 All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/master/LICENSE)
 EOF
 
+# Link readme used by dockerhub
+ln -s ../README.md $1/latest/README.md
+
 # Create default dockerignore
 # See syntax in http://tldp.org/LDP/abs/html/here-docs.html
-cat > $1/.dockerignore <<EOF
+cat > $1/latest/.dockerignore <<EOF
 README.md
 hooks/
 EOF
 
 # Final word
-echo "Don't forget to update the main README.md"
+set +x
+echo
+echo "Next steps:"
+echo " - write the dockerfile"
+echo " - update the readme"
+echo " - create a new repository on dockerhub"
+echo " - retrieve a webhook url from microbadger"
