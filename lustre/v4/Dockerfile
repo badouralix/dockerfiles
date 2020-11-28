@@ -15,11 +15,10 @@ ENV LUSTRE_INSTALL /opt/lustre
 
 RUN mkdir -p ${LUSTRE_INSTALL} && \
     wget -qO- http://www-verimag.imag.fr/DIST-TOOLS/SYNCHRONE/lustre-v4/distrib/linux64/lustre-v4-III-ca-linux64.tgz | \
-        tar -xzf - --directory=${LUSTRE_INSTALL} --strip-components=2 && \
+    tar -xzf - --directory=${LUSTRE_INSTALL} --strip-components=2 && \
     echo "source $LUSTRE_INSTALL/setenv.sh" >> ~/.bashrc
 
 WORKDIR /app
 
 #ENTRYPOINT [ "/bin/bash" ]
 CMD [ "/bin/bash" ]
-
