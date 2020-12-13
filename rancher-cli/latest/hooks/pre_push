@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# This file  adds  a `post_build` step  to  the automated build process.  For further infomation,
-# see  https://docs.docker.com/docker-cloud/builds/advanced/#override-build-test-or-push-commands
+# This file implements a `pre_push` hook executed during automated builds.
+# See https://docs.docker.com/docker-hub/builds/advanced/#custom-build-phase-hooks
 #
 
 # Retrieve current base image tag and tag the built image
