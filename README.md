@@ -104,7 +104,7 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 
 ```bash
 git clone https://github.com/badouralix/dockerfiles.git badouralix-dockerfiles
-cd badouralix-dockerfiles/<name>
+cd badouralix-dockerfiles/<name>/latest
 docker build -t $USER-local/<name> .
 ```
 
