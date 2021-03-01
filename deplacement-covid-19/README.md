@@ -37,6 +37,7 @@ Then open <http://localhost:8080> on your browser.
 - <https://github.com/LAB-MI/deplacement-codiv-19> or <https://github.com/LAB-MI/deplacement-covid-19>
 - <https://github.com/LAB-MI/attestation-deplacement-derogatoire-q4-2020>
 - <https://github.com/LAB-MI/attestation-couvre-feu-covid-19>
+- <https://github.com/LAB-MI/attestation-deplacement-derogatoire-covid-19>
 
 ## License
 
