@@ -5,6 +5,7 @@ LABEL org.opencontainers.image.description="Docker image for scrapy"
 
 RUN apt-get update && \
     apt-get install --assume-yes --no-install-recommends \
+            cargo \
             gcc \
             libffi-dev \
             libssl-dev \
@@ -12,6 +13,7 @@ RUN apt-get update && \
             libxslt1-dev \
             python3-pip \
             python3-dev \
+            rustc \
             zlib1g-dev \
             && \
     rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
