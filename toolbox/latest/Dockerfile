@@ -7,6 +7,7 @@ LABEL org.opencontainers.image.description="Personal collection of useful linux 
 # Install a bunch of useful packages
 RUN apt-get update && \
     apt-get install --assume-yes --no-install-recommends \
+            apt-file \
             build-essential \
             ca-certificates \
             curl \
