@@ -14,6 +14,7 @@ RUN apt-get update && \
             dnsutils \
             fzf \
             git \
+            gnupg \
             htop \
             less \
             locate \
