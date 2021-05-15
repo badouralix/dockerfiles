@@ -72,6 +72,14 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/python-scrapy?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/python-scrapy?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/python-scrapy)
 
+- [*python-vipaccess*](https://hub.docker.com/r/badouralix/python-vipaccess) - alpine-based docker image for <https://github.com/dlenski/python-vipaccess> \
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/python-vipaccess?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/python-vipaccess?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/python-vipaccess?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/python-vipaccess?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/python-vipaccess?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/python-vipaccess?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/python-vipaccess)
+
 - *r-languageserver* - multi-base docker images with R and R-languageserver
 
 - [*rancher-cli*](https://hub.docker.com/r/badouralix/rancher-cli) - rancher-cli for gitlab-ci \
