@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/python-scrapy?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/python-scrapy?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/python-scrapy?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/python-scrapy?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/python-scrapy)
 
 This repository contains a **Dockerfile** for [Scrapy](http://scrapy.org/).
 

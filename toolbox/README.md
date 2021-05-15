@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/toolbox?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/toolbox?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/toolbox?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/toolbox?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/toolbox)
 
 This **Dockerfile** builds an image with a bunch of useful tools.
 

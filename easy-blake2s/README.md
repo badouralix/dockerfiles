@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/easy-blake2s?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/easy-blake2s?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/easy-blake2s?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/easy-blake2s?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/easy-blake2s)
 
 This **Dockerfile** computes the BLAKE2s hash of an input secret.
 

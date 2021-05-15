@@ -22,7 +22,6 @@ cat > $1/README.md <<EOF
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/$1?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/$1?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/$1?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/$1?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/$1)
 
 See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/$1/).
 

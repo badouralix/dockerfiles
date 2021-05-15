@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/python-vipaccess?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/python-vipaccess?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/python-vipaccess?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/python-vipaccess?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/python-vipaccess)
 
 This **Dockerfile** provides a one-liner for <https://github.com/dlenski/python-vipaccess>.
 

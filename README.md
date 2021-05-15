@@ -20,7 +20,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-http2?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-http2?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-http2?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/curl-http2?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/curl-http2)
 
 - [*curl-jq*](https://hub.docker.com/r/badouralix/curl-jq) - alpine-based docker image with `curl` and `jq` \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/curl-jq?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
@@ -28,7 +27,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-jq?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-jq?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-jq?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/curl-jq?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/curl-jq)
 
 - [*deplacement-covid-19*](https://hub.docker.com/r/badouralix/deplacement-covid-19) - alpine-based docker image serving the official covid-19 générateur d'attestation de déplacement dérogatoire \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/deplacement-covid-19?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
@@ -36,7 +34,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/deplacement-covid-19?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/deplacement-covid-19?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/deplacement-covid-19?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/deplacement-covid-19?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/deplacement-covid-19)
 
 - [*easy-blake2s*](https://hub.docker.com/r/badouralix/easy-blake2s) - alpine-based docker image to compute blake2s hashes \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/easy-blake2s?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
@@ -44,7 +41,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/easy-blake2s?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/easy-blake2s?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/easy-blake2s?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/easy-blake2s?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/easy-blake2s)
 
 - *lustre* - debian-based docker image for Lustre V4
 
@@ -54,7 +50,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/nusmv?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/nusmv?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/nusmv?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/nusmv?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/nusmv)
 
 - [*oh-my-via*](https://hub.docker.com/r/badouralix/oh-my-via) - image for oh-my-via theme testing purpose \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/oh-my-via?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
@@ -62,7 +57,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/oh-my-via?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/oh-my-via?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/oh-my-via?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/oh-my-via?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/oh-my-via)
 
 - [*python-scrapy*](https://hub.docker.com/r/badouralix/python-scrapy) - debian-based docker image for scrapy \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/python-scrapy?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
@@ -70,7 +64,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/python-scrapy?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/python-scrapy?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/python-scrapy?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/python-scrapy?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/python-scrapy)
 
 - [*python-vipaccess*](https://hub.docker.com/r/badouralix/python-vipaccess) - alpine-based docker image for <https://github.com/dlenski/python-vipaccess> \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/python-vipaccess?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
@@ -78,7 +71,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/python-vipaccess?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/python-vipaccess?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/python-vipaccess?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/python-vipaccess?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/python-vipaccess)
 
 - *r-languageserver* - multi-base docker images with R and R-languageserver
 
@@ -88,7 +80,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/rancher-cli?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/rancher-cli?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/rancher-cli?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/rancher-cli?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/rancher-cli)
 
 - [*toolbox*](https://hub.docker.com/r/badouralix/toolbox) - debian-based image with useful linux tools \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/toolbox?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
@@ -96,7 +87,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/toolbox?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/toolbox?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/toolbox?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/toolbox)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/toolbox?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/toolbox)
 
 - [*zunit*](https://hub.docker.com/r/badouralix/zunit) - alpine-based image for ZUnit, a powerful unit testing framework for ZSH \
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/zunit?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
@@ -104,7 +94,6 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/zunit?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/zunit?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/zunit?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/zunit?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/zunit)
 
 ## Usage
 

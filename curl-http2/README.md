@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-http2?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-http2?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-http2?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/curl-http2?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/curl-http2)
 
 This repository contains a **Dockerfile** for [curl](https://curl.haxx.se/) with http2 support.
 

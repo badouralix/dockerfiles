@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/oh-my-via?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/oh-my-via?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/oh-my-via?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/oh-my-via?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/oh-my-via)
 
 This **Dockerfile** builds an image with zsh, oh-my-zsh and [oh-my-via theme](https://github.com/badouralix/oh-my-via), for testing purpose.
 

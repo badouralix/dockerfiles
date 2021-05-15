@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/zunit?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/zunit?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/zunit?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/zunit?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/zunit)
 
 ⚠️⚠️⚠️  **ZUnit is still in progress, this image is built upon branch `master`.** ⚠️⚠️⚠️
 

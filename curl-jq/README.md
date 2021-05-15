@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-jq?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-jq?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-jq?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/curl-jq?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/curl-jq)
 
 This **Dockerfile** embeds both `curl` and `jq`, and can be used to run complex extractions on remote json resources.
 

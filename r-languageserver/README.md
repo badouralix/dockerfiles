@@ -5,7 +5,6 @@
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/r-languageserver?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-languageserver)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/r-languageserver?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-languageserver)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/r-languageserver?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-languageserver)
-[![MicroBadger Layers](https://img.shields.io/microbadger/layers/badouralix/r-languageserver?logo=docker&logoColor=white)](https://microbadger.com/images/badouralix/r-languageserver)
 
 This repository contains a **Dockerfile** installing [r-languageserver](https://github.com/REditorSupport/languageserver) on a handful of different distros.
 
