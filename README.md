@@ -1,4 +1,4 @@
-# badouralix/dockerfiles
+# Dockerfiles
 
 This repository contains some Dockerfiles.
 
