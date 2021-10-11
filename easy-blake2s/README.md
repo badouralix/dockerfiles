@@ -24,4 +24,4 @@ $ docker run --rm badouralix/easy-blake2s "Hello, world!"
 
 ## License
 
-All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/master/LICENSE)
+All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/main/LICENSE)

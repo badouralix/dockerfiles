@@ -43,4 +43,4 @@ use this image is to always append `rancher` before any rancher-cli command, thu
 
 ## License
 
-All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/master/LICENSE)
+All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/main/LICENSE)

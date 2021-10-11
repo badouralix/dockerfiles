@@ -36,4 +36,4 @@ nusmv <file>
 ## License
 
 Unless explicitly stated to the contrary, all contents licensed under the
-[WTFPL](https://github.com/badouralix/dockerfiles/blob/master/LICENSE).
+[WTFPL](https://github.com/badouralix/dockerfiles/blob/main/LICENSE).

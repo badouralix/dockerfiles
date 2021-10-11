@@ -33,7 +33,7 @@ docker run -it --rm badouralix/$1
 
 ## License
 
-All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/master/LICENSE)
+All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/main/LICENSE)
 EOF
 
 # Link readme used by dockerhub

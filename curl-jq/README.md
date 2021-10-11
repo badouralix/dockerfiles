@@ -59,4 +59,4 @@ $ docker run --rm badouralix/curl-jq sh -c "curl https://hub.docker.com/api/buil
 
 ## License
 
-All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/master/LICENSE)
+All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/main/LICENSE)
