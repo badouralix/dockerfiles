@@ -121,4 +121,4 @@ Give <https://github.com/badouralix/dockerize> a try, for painless and carefree 
 
 ## License
 
-Unless explicitly stated to the contrary, all contents licensed under the [WTFPL](LICENSE).
+Unless expressly stated otherwise, all contents licensed under the [MIT License](LICENSE).

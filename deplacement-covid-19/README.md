@@ -40,4 +40,4 @@ Then open <http://localhost:8080> on your browser.
 
 ## License
 
-All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/main/LICENSE)
+Unless expressly stated otherwise, all contents licensed under the [MIT License](https://github.com/badouralix/dockerfiles/blob/main/LICENSE).

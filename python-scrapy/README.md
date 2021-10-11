@@ -27,4 +27,4 @@ docker run -it --rm badouralix/python-scrapy
 
 ## License
 
-All contents licensed under the [WTFPL](../LICENSE)
+Unless expressly stated otherwise, all contents licensed under the [MIT License](https://github.com/badouralix/dockerfiles/blob/main/LICENSE).

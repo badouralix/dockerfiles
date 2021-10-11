@@ -155,4 +155,4 @@ Warning in utils::make.packages.html(.Library, docdir = R.home("doc")) :
 
 ## License
 
-All contents licensed under the [WTFPL](https://github.com/badouralix/dockerfiles/blob/main/LICENSE)
+Unless expressly stated otherwise, all contents licensed under the [MIT License](https://github.com/badouralix/dockerfiles/blob/main/LICENSE).
