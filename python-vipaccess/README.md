@@ -1,6 +1,5 @@
 # python-vipaccess
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/python-vipaccess?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/python-vipaccess?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/python-vipaccess?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/python-vipaccess?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-vipaccess)

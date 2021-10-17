@@ -9,15 +9,11 @@ mkdir -p $1/latest
 # Create an empty dockerfile
 touch $1/latest/Dockerfile
 
-# Link hooks used by dockerhub
-ln -s ../../.hooks $1/latest/hooks
-
 # Create default readme
 # See syntax in http://tldp.org/LDP/abs/html/here-docs.html
 cat > $1/README.md <<EOF
 # $1
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/$1?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/$1?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/$1?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/$1?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
@@ -33,17 +29,14 @@ docker run -it --rm badouralix/$1
 
 ## License
 
-Unless expressly stated otherwise, all contents licensed under the [MIT License](https://github.com/badouralix/dockerfiles/blob/main/LICENSE)
+Unless expressly stated otherwise, all contents licensed under the [MIT License](https://github.com/badouralix/dockerfiles/blob/main/LICENSE).
 EOF
-
-# Link readme used by dockerhub
-ln -s ../README.md $1/latest/README.md
 
 # Create default dockerignore
 # See syntax in http://tldp.org/LDP/abs/html/here-docs.html
 cat > $1/latest/.dockerignore <<EOF
-README.md
 hooks/
+platforms.txt
 EOF
 
 # Final word

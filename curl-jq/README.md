@@ -1,6 +1,5 @@
 # curl-jq
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/curl-jq?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-jq?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-jq?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-jq?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)

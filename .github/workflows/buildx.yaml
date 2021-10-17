@@ -1,0 +1,119 @@
+name: buildx
+
+on:
+  workflow_dispatch:  # See https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_dispatch
+    inputs:
+      image_name:
+        description: Name of the image to build
+        required: true
+      image_tag:
+        description: Tag of the image to build
+        required: true
+        default: latest
+      pull_before_build:
+        description: Pull image before running build
+        required: true
+        default: "true"
+
+jobs:
+  buildx:
+    runs-on: ubuntu-latest
+    env:
+      IMAGE_NAME: badouralix/${{ github.event.inputs.image_name }}  # Not exactly the correct wording as per https://stackoverflow.com/questions/31115098/what-is-the-difference-between-an-image-and-a-repository
+      IMAGE_TAG: ${{ github.event.inputs.image_tag }}
+      WORKING_DIRECTORY: ${{ github.event.inputs.image_name }}/${{ github.event.inputs.image_tag }}
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2  # See https://github.com/actions/checkout
+
+    - name: Validate event inputs
+      uses: actions/github-script@v5  # See https://github.com/actions/github-script
+      with:
+        script: |
+          for (const [key, value] of Object.entries(context.payload.inputs)) {
+            core.notice(value, {title: key})
+          }
+
+          if (context.ref !== 'refs/heads/main') {
+            core.setFailed(`Invalid git branch (expected 'refs/heads/main', got '${context.ref}').`)
+            return
+          }
+
+          const fs = require('fs')
+          const image_name = context.payload.inputs.image_name
+          const image_tag = context.payload.inputs.image_tag
+
+          if (!fs.existsSync(image_name) || !fs.statSync(image_name).isDirectory()) {
+            core.setFailed(`Invalid image name '${image_name}'.`)
+            return
+          }
+
+          if (!fs.existsSync(`${image_name}/${image_tag}`) || !fs.statSync(`${image_name}/${image_tag}`).isDirectory()) {
+            core.setFailed(`Invalid image tag '${image_tag}' with image name '${image_name}'.`)
+            return
+          }
+
+    - name: Set up qemu
+      uses: docker/setup-qemu-action@v1  # See https://github.com/docker/setup-qemu-action
+
+    - name: Set up buildx
+      uses: docker/setup-buildx-action@v1  # See https://github.com/docker/setup-buildx-action
+
+    - name: Login to dockerhub
+      uses: docker/login-action@v1  # See https://github.com/docker/login-action
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}  # Get access token from https://hub.docker.com/settings/security
+
+    # Hack from https://stackoverflow.com/questions/58913512/how-to-give-github-action-the-content-of-a-file-as-input
+    - name: Read platforms
+      id: read_platforms
+      working-directory: ${{ env.WORKING_DIRECTORY }}
+      run: |
+        echo "::set-output name=platforms::$(cat platforms.txt)"
+
+    # See also https://github.com/docker/metadata-action
+    - name: Generate labels
+      id: generate_labels
+      uses: actions/github-script@v5  # See https://github.com/actions/github-script
+      with:
+        script: |
+          const labels = []
+
+          labels.push(`com.github.actions.event_name=${context.eventName}`)
+          labels.push(`com.github.actions.job=${context.job}`)
+          labels.push(`com.github.actions.run_id=${context.runId}`)
+          labels.push(`com.github.actions.run_url=${context.payload.repository.html_url}/actions/runs/${context.runId}`)
+
+          labels.push(`org.opencontainers.image.created=${new Date().toISOString()}`)
+          labels.push(`org.opencontainers.image.documentation=${context.payload.repository.html_url}/tree/${context.sha.substr(0,7)}/${context.payload.inputs.image_name}/README.md`)
+          labels.push(`org.opencontainers.image.revision=${context.sha}`)
+          labels.push(`org.opencontainers.image.source=${context.payload.repository.html_url}`)
+
+          core.startGroup('Generated labels')
+          for (const label of labels) {
+            core.info(label)
+          }
+          core.endGroup()
+
+          core.setOutput('labels', labels.join('\n'))
+
+    - name: Run pre build hook
+      id: pre_build
+      working-directory: ${{ env.WORKING_DIRECTORY }}
+      run: |
+        if [[ -f hooks/pre_build ]]; then ./hooks/pre_build; fi
+
+    - name: Build and push
+      uses: docker/build-push-action@v2  # See https://github.com/docker/build-push-action
+      with:
+        context: ${{ env.WORKING_DIRECTORY }}
+        labels: |
+          ${{ steps.generate_labels.outputs.labels }}
+          ${{ steps.pre_build.outputs.extra_labels }}
+        platforms: ${{ steps.read_platforms.outputs.platforms }}
+        pull: ${{ github.event.inputs.pull_before_build }}
+        push: true
+        tags: |
+          ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+          ${{ steps.pre_build.outputs.extra_tags }}

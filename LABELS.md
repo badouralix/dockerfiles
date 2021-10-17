@@ -24,17 +24,26 @@ reasons.
 
 ## OCI Image Spec
 
-| Label Key                                |       Source        |
-| :--------------------------------------- | :-----------------: |
-| `org.opencontainers.image.authors`       |     Dockerfile      |
-| `org.opencontainers.image.created`       | hooks/post_checkout |
-| `org.opencontainers.image.description`   |     Dockerfile      |
-| `org.opencontainers.image.documentation` | hooks/post_checkout |
-| `org.opencontainers.image.licenses`      |                     |
-| `org.opencontainers.image.ref.name`      |                     |
-| `org.opencontainers.image.revision`      | hooks/post_checkout |
-| `org.opencontainers.image.source`        | hooks/post_checkout |
-| `org.opencontainers.image.title`         |                     |
-| `org.opencontainers.image.url`           |                     |
-| `org.opencontainers.image.vendor`        |                     |
-| `org.opencontainers.image.version`       |                     |
+| Label Key                                |   Source   |
+| :--------------------------------------- | :--------: |
+| `org.opencontainers.image.authors`       | Dockerfile |
+| `org.opencontainers.image.created`       |   buildx   |
+| `org.opencontainers.image.description`   | Dockerfile |
+| `org.opencontainers.image.documentation` |   buildx   |
+| `org.opencontainers.image.licenses`      |            |
+| `org.opencontainers.image.ref.name`      |            |
+| `org.opencontainers.image.revision`      |   buildx   |
+| `org.opencontainers.image.source`        |   buildx   |
+| `org.opencontainers.image.title`         |            |
+| `org.opencontainers.image.url`           |            |
+| `org.opencontainers.image.vendor`        |            |
+| `org.opencontainers.image.version`       |            |
+
+## Github Actions
+
+| Label Key                       | Source |
+| :------------------------------ | :----: |
+| `com.github.actions.event_name` | buildx |
+| `com.github.actions.job`        | buildx |
+| `com.github.actions.run_id`     | buildx |
+| `com.github.actions.run_url`    | buildx |

@@ -1,6 +1,5 @@
 # python-scrapy
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/python-scrapy?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/python-scrapy?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/python-scrapy?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/python-scrapy?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/python-scrapy)

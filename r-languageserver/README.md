@@ -1,6 +1,5 @@
 # r-languageserver
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/r-languageserver?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-languageserver)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/r-languageserver?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-languageserver)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/r-languageserver?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-languageserver)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/r-languageserver?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/r-languageserver)

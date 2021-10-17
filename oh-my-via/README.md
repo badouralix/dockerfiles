@@ -1,6 +1,5 @@
 # oh-my-via
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/oh-my-via?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/oh-my-via?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/oh-my-via?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/oh-my-via?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/oh-my-via)

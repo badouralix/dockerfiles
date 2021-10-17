@@ -1,6 +1,5 @@
 # curl-http2
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/curl-http2?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-http2?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-http2?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-http2?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)

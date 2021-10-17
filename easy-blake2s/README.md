@@ -1,6 +1,5 @@
 # easy-blake2s
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/easy-blake2s?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/easy-blake2s?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/easy-blake2s?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/easy-blake2s?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)

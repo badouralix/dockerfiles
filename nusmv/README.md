@@ -1,6 +1,5 @@
 # NuSMV
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/nusmv?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/nusmv?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/nusmv?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/nusmv?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/nusmv)

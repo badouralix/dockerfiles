@@ -1,6 +1,5 @@
 # rancher-cli
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/rancher-cli?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/rancher-cli?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/rancher-cli?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/rancher-cli?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/rancher-cli)

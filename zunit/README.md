@@ -1,6 +1,5 @@
 # zunit
 
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/badouralix/zunit?label=build&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/zunit?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/zunit?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/zunit?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/zunit)
