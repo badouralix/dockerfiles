@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bullseye
 
 LABEL org.opencontainers.image.authors="Ayaz BADOURALY"
 LABEL org.opencontainers.image.description="Docker image for scrapy"

@@ -22,7 +22,7 @@ docker run -it --rm badouralix/python-scrapy
 
 ## Tags
 
-- `latest` : image based on `debian:buster`
+- `latest` : image based on `debian:bullseye`
 
 ## License
 
