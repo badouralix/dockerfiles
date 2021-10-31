@@ -17,6 +17,7 @@ on:
 
 jobs:
   buildx:
+    name: buildx
     runs-on: ubuntu-latest
     env:
       IMAGE_NAME: badouralix/${{ github.event.inputs.image_name }}  # Not exactly the correct wording as per https://stackoverflow.com/questions/31115098/what-is-the-difference-between-an-image-and-a-repository
