@@ -4,14 +4,14 @@
 set -euxo pipefail
 
 # Create image folder
-mkdir -p $1/latest
+mkdir -p "$1/latest"
 
 # Create an empty dockerfile
-touch $1/latest/Dockerfile
+touch "$1/latest/Dockerfile"
 
 # Create default readme
 # See syntax in http://tldp.org/LDP/abs/html/here-docs.html
-cat > $1/README.md <<EOF
+cat > "$1/README.md" <<EOF
 # $1
 
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/$1?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/$1)
@@ -34,7 +34,7 @@ EOF
 
 # Create default dockerignore
 # See syntax in http://tldp.org/LDP/abs/html/here-docs.html
-cat > $1/latest/.dockerignore <<EOF
+cat > "$1/latest/.dockerignore" <<EOF
 hooks/
 platforms.txt
 EOF
