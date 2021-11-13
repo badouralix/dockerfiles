@@ -22,6 +22,12 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-http2?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-http2?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 
+- [*curl-http3*](https://hub.docker.com/r/badouralix/curl-http3) - debian-based docker image for curl with http3 support (ngtcp2+openssl) \
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-http3?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http3)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-http3?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http3)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-http3?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http3)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-http3?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http3)
+
 - [*curl-jq*](https://hub.docker.com/r/badouralix/curl-jq) - alpine-based docker image with `curl` and `jq` \
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-jq?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-jq?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
