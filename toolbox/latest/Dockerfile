@@ -42,6 +42,7 @@ RUN apt-get update && \
             traceroute \
             tree \
             vim \
+            wget \
             zsh \
             && \
     rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
