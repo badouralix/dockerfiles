@@ -16,6 +16,7 @@ RUN apt-get update && \
             git \
             gnupg \
             htop \
+            iproute2 \
             less \
             locate \
             lsof \
