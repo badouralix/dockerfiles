@@ -22,13 +22,16 @@ docker run -it --rm badouralix/toolbox
 This toolbox contains the following deb packages :
 
 ```text
+apt-file
 build-essential
 ca-certificates
 curl
 dnsutils
 fzf
 git
+gnupg
 htop
+iproute2
 less
 locate
 lsof
@@ -53,7 +56,9 @@ tcpdump
 tini
 tldr
 traceroute
+tree
 vim
+wget
 zsh
 ```
 
