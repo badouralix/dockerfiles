@@ -71,7 +71,7 @@ jobs:
       id: read_platforms
       working-directory: ${{ env.WORKING_DIRECTORY }}
       run: |
-        echo "::set-output name=platforms::$(cat platforms.txt)"
+        echo "platforms=$(cat platforms.txt)" >> $GITHUB_OUTPUT
 
     # See also https://github.com/docker/metadata-action
     - name: Generate labels
