@@ -106,7 +106,7 @@ jobs:
         if [[ -f hooks/pre_build ]]; then ./hooks/pre_build; fi
 
     - name: Build and push
-      uses: docker/build-push-action@v3  # See https://github.com/docker/build-push-action
+      uses: docker/build-push-action@v4  # See https://github.com/docker/build-push-action
       with:
         context: ${{ env.WORKING_DIRECTORY }}
         labels: |
