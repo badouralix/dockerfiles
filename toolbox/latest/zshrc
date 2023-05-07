@@ -13,7 +13,7 @@ ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 ZSH_THEME="oh-my-via/via"
 
 # Configure zsh plugins
-plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(fzf-tab git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
 
 # Source external scripts
 source $ZSH/oh-my-zsh.sh
@@ -21,6 +21,8 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 
 # Enable autocompletion
 zstyle ':completion:*' rehash true
+zstyle ':fzf-tab:*' disabled-on files
+zstyle ':fzf-tab:complete:-command-:*' fzf-flags --height $(( LINES / 3 * 2 ))
 unsetopt list_ambiguous
 autoload -U compinit && compinit -u
 

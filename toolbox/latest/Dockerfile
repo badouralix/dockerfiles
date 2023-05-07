@@ -50,8 +50,9 @@ RUN apt-get update && \
     rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
     rm -rf /tmp/* /var/tmp/*
 
-# Install oh-my-via
+# Install oh-my-zsh with custom plugins and oh-my-via theme
 RUN git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
+    git clone --depth=1 https://github.com/Aloxaf/fzf-tab /opt/oh-my-zsh/custom/plugins/fzf-tab && \
     git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions.git /opt/oh-my-zsh/custom/plugins/zsh-autosuggestions && \
     git clone --depth=1 https://github.com/zsh-users/zsh-completions.git /opt/oh-my-zsh/custom/plugins/zsh-completions && \
     git clone --depth=1 https://github.com/zsh-users/zsh-syntax-highlighting.git /opt/oh-my-zsh/custom/plugins/zsh-syntax-highlighting && \
