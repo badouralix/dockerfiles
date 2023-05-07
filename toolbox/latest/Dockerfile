@@ -16,6 +16,7 @@ RUN apt-get update && \
             git \
             gnupg \
             htop \
+            iperf3 \
             iproute2 \
             less \
             locate \

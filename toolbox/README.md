@@ -31,6 +31,7 @@ fzf
 git
 gnupg
 htop
+iperf3
 iproute2
 less
 locate
