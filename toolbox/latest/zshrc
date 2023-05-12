@@ -3,6 +3,9 @@ export LS_COLORS='no=00:fi=00:di=01;32:ln=36:pi=33:so=01;35:bd=01;33:cd=01;33:ex
 export PAGER=most
 export ZSH=/opt/oh-my-zsh
 
+# Override default term when the container is allocated a pseudo-tty
+[ "$TERM" = "xterm" ] && export TERM=xterm-256color
+
 # Configure oh-my-zsh
 COMPLETION_WAITING_DOTS="true"
 DISABLE_AUTO_UPDATE="true"
@@ -23,6 +26,8 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 zstyle ':completion:*' rehash true
 zstyle ':fzf-tab:*' disabled-on files
 zstyle ':fzf-tab:complete:-command-:*' fzf-flags --height $(( LINES / 3 * 2 ))
+zstyle ':fzf-tab:complete:-command-:*' fzf-preview '(out=$(MANWIDTH=$FZF_PREVIEW_COLUMNS man "$word") 2>/dev/null && echo $out) || (out=$(which "$word") && echo $out) || echo "${(P)word}"'
+zstyle ':fzf-tab:complete:(-command-|-parameter-|-brace-parameter-|export|unset|expand):*' fzf-preview 'echo ${(P)word}'
 unsetopt list_ambiguous
 autoload -U compinit && compinit -u
 
