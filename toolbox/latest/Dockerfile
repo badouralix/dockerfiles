@@ -10,6 +10,7 @@ RUN apt-get update && \
             apt-file \
             build-essential \
             ca-certificates \
+            conntrack \
             curl \
             dnsutils \
             fzf \
@@ -18,6 +19,7 @@ RUN apt-get update && \
             htop \
             iperf3 \
             iproute2 \
+            iptables \
             less \
             locate \
             lsof \
