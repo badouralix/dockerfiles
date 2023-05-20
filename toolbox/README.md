@@ -23,7 +23,6 @@ This toolbox contains the following deb packages :
 
 ```text
 apt-file
-build-essential
 ca-certificates
 colordiff
 conntrack

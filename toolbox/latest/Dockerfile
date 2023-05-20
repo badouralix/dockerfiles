@@ -8,7 +8,6 @@ LABEL org.opencontainers.image.description="Personal collection of useful linux 
 RUN apt-get update && \
     apt-get install --assume-yes --no-install-recommends \
             apt-file \
-            build-essential \
             ca-certificates \
             colordiff \
             conntrack \
