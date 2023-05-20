@@ -42,7 +42,7 @@ EOF
 # Create default platforms.txt
 # See syntax in http://tldp.org/LDP/abs/html/here-docs.html
 cat > "$1/latest/platforms.txt" <<EOF
-linux/amd64
+linux/amd64,linux/arm64
 EOF
 
 # Final word
