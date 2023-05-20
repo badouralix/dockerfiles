@@ -25,6 +25,7 @@ This toolbox contains the following deb packages :
 apt-file
 build-essential
 ca-certificates
+colordiff
 conntrack
 curl
 dnsutils

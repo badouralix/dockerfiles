@@ -10,6 +10,7 @@ RUN apt-get update && \
             apt-file \
             build-essential \
             ca-certificates \
+            colordiff \
             conntrack \
             curl \
             dnsutils \
