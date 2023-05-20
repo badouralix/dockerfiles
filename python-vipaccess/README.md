@@ -37,4 +37,4 @@ expiry 2024-05-14T17:18:02.276Z
 
 ## License
 
-All contents licensed under the [Apache License 2.0](https://github.com/badouralix/dockerfiles/blob/master/python-vipaccess/LICENSE).
+All contents licensed under the [Apache License 2.0](https://github.com/badouralix/dockerfiles/blob/main/python-vipaccess/LICENSE).
