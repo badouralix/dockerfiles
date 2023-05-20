@@ -13,6 +13,7 @@ RUN apt-get update && \
             conntrack \
             curl \
             dnsutils \
+            file \
             fzf \
             git \
             gnupg \

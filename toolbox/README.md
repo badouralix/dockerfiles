@@ -28,6 +28,7 @@ colordiff
 conntrack
 curl
 dnsutils
+file
 fzf
 git
 gnupg
