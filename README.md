@@ -46,6 +46,12 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/easy-blake2s?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/easy-blake2s?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/easy-blake2s)
 
+- [*linux-headers*](https://hub.docker.com/r/badouralix/linux-headers) - toolbox to run eBPF programs on Docker Desktop \
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/linux-headers?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/linux-headers)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/linux-headers?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/linux-headers)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/linux-headers?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/linux-headers)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/linux-headers?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/linux-headers)
+
 - *lustre* - debian-based docker image for Lustre V4
 
 - [*nusmv*](https://hub.docker.com/r/badouralix/nusmv) - alpine-based docker image with NuSMV and zchaff SAT solver \
