@@ -12,7 +12,7 @@ RUN apk add --no-cache \
         zsh \
         zsh-vcs \
         && \
-    git clone --depth=1 git://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
+    git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git /opt/oh-my-zsh && \
     mkdir -p /etc/skel && touch /etc/skel/.zshrc && \
     adduser -Ds /bin/zsh user
 
