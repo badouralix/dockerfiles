@@ -17,12 +17,13 @@ See the repo on [Docker Hub](https://hub.docker.com/r/badouralix/python-scrapy/)
 ## Usage
 
 ```bash
-docker run -it --rm badouralix/python-scrapy
+$ docker run -it --rm badouralix/python-scrapy
+>>> fetch("http://quotes.toscrape.com/")
+>>> response.xpath("//title/text()").get()
+'Quotes to Scrape'
 ```
 
-## Tags
-
-- `latest` : image based on `debian:bullseye`
+See other examples at <https://docs.scrapy.org/en/latest/intro/examples.html>.
 
 ## License
 
