@@ -28,7 +28,7 @@ RUN apt-get update && \
             most \
             mtr-tiny \
             net-tools \
-            netcat \
+            netcat-openbsd \
             nmap \
             parallel \
             psmisc \
