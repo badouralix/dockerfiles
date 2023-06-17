@@ -8,12 +8,9 @@ RUN tar -xvf /kernel-dev.tar --directory=/ && \
     mkdir -p /lib/modules/5.15.49-linuxkit-pr && \
     ln -s /usr/src/linux-headers-5.15.49-linuxkit-pr /lib/modules/5.15.49-linuxkit-pr/build
 
-# Install bpfcc-tools from testing instead of stable to pick up https://github.com/iovisor/bcc/pull/3391
-# Also install convenient tracing tools such as bpftrace and perf from testing to get recent versions
-RUN printf "deb http://deb.debian.org/debian testing main" > /etc/apt/sources.list.d/testing.list && \
-    printf "Package: *\nPin: release a=testing\nPin-Priority: 100\n" > /etc/apt/preferences.d/testing.pref && \
-    apt-get update && \
-    apt-get install --assume-yes --no-install-recommends --target-release=testing bpfcc-tools bpftrace linux-perf && \
+# Install bcc toolkit along with convenient tracing tools such as bpftrace and perf
+RUN apt-get update && \
+    apt-get install --assume-yes --no-install-recommends bpfcc-tools bpftrace linux-perf && \
     rm -rf /var/cache/apt/* /var/lib/apt/lists/* && \
     rm -rf /tmp/* /var/tmp/*
 
