@@ -43,8 +43,8 @@ alias du='du -h'
 alias free='free -h'
 alias less='less -M'
 alias mkfile='touch'
+alias python='python3'
 alias rgrep='rg'
 alias rm='rm -v'
-alias python='python3'
 
 # vim: ft=zsh fenc=utf-8
