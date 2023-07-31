@@ -16,6 +16,12 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 
 ## Current dockerfiles
 
+- [*caddy-dns-ovh*](https://hub.docker.com/r/badouralix/caddy-dns-ovh) - caddy built with the OVH module \
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/caddy-dns-ovh?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/caddy-dns-ovh)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/caddy-dns-ovh?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/caddy-dns-ovh)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/caddy-dns-ovh?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/caddy-dns-ovh)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/caddy-dns-ovh?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/caddy-dns-ovh)
+
 - [*curl-http2*](https://hub.docker.com/r/badouralix/curl-http2) - alpine-based docker image for curl with http2 support \
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-http2?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-http2?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-http2)
