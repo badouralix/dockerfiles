@@ -24,6 +24,17 @@ docker run \
     badouralix/caddy-dns-ovh
 ```
 
+Create keys in <https://eu.api.ovh.com/createToken/>
+
+| Field                   | Value                               |
+| :---------------------- | :---------------------------------- |
+| Application name        | caddy-dns-ovh                       |
+| Application description | Resolve ACME DNS-01 challenge       |
+| Validity                | Unlimited                           |
+| Rights                  | POST /domain/zone/[FQDN]/record     |
+| Rights                  | POST /domain/zone/[FQDN]/refresh    |
+| Rights                  | DELETE /domain/zone/[FQDN]/record/* |
+
 ## License
 
 Unless expressly stated otherwise, all contents licensed under the [MIT License](https://github.com/badouralix/dockerfiles/blob/main/LICENSE).
