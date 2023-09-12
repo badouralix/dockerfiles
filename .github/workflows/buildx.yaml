@@ -61,7 +61,7 @@ jobs:
       uses: docker/setup-buildx-action@v2  # See https://github.com/docker/setup-buildx-action
 
     - name: Login to dockerhub
-      uses: docker/login-action@v2  # See https://github.com/docker/login-action
+      uses: docker/login-action@v3  # See https://github.com/docker/login-action
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}  # Get access token from https://hub.docker.com/settings/security
