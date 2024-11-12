@@ -25,7 +25,7 @@ jobs:
       WORKING_DIRECTORY: ${{ github.event.inputs.image_name }}/${{ github.event.inputs.image_tag }}
     steps:
     - name: Checkout
-      uses: actions/checkout@v3  # See https://github.com/actions/checkout
+      uses: actions/checkout@v4  # See https://github.com/actions/checkout
 
     - name: Validate event inputs
       uses: actions/github-script@v6  # See https://github.com/actions/github-script
