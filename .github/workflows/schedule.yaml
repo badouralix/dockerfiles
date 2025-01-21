@@ -3,6 +3,7 @@ name: schedule
 on:
   schedule:  # See https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule
   - cron: "0 0 * * *"
+  workflow_dispatch:  # See https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
 
 jobs:
   schedule:
