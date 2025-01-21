@@ -10,10 +10,6 @@ on:
         description: Tag of the image to build
         required: true
         default: latest
-      pull_before_build:
-        description: Pull image before running build
-        required: true
-        default: "true"
 
 jobs:
   buildx:
@@ -113,7 +109,6 @@ jobs:
           ${{ steps.generate_labels.outputs.labels }}
           ${{ steps.pre_build.outputs.extra_labels }}
         platforms: ${{ steps.read_platforms.outputs.platforms }}
-        pull: ${{ github.event.inputs.pull_before_build }}
         push: true
         tags: |
           ${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
