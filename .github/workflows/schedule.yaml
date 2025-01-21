@@ -19,7 +19,7 @@ jobs:
         - python-scrapy
         - rancher-cli
         - toolbox
-    uses: ./.github/workflows/buildx.yaml@main
+    uses: ./.github/workflows/buildx.yaml
     with:
       image_name: ${{ matrix.image_name }}
       image_tag: latest
