@@ -1,0 +1,24 @@
+name: schedule
+
+on:
+  schedule:  # See https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#schedule
+  - cron: "0 0 * * *"
+
+jobs:
+  schedule:
+    name: schedule
+    strategy:
+      matrix:
+        image_name:
+        - caddy-dns-ovh
+        - curl-http2
+        - curl-jq
+        - easy-blake2s
+        - oh-my-via
+        - python-scrapy
+        - rancher-cli
+        - toolbox
+    uses: ./.github/workflows/buildx.yaml@main
+    with:
+      image_name: ${{ matrix.image_name }}
+      image_tag: latest

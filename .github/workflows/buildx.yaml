@@ -1,15 +1,26 @@
 name: buildx
 
 on:
-  workflow_dispatch:  # See https://docs.github.com/en/actions/reference/events-that-trigger-workflows#workflow_dispatch
+  workflow_call:  # See https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_call
+    inputs:
+      image_name:
+        description: Name of the image to build
+        required: true
+        type: string
+      image_tag:
+        description: Tag of the image to build
+        default: latest
+        required: true
+        type: string
+  workflow_dispatch:  # See https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows#workflow_dispatch
     inputs:
       image_name:
         description: Name of the image to build
         required: true
       image_tag:
         description: Tag of the image to build
-        required: true
         default: latest
+        required: true
 
 jobs:
   buildx:
