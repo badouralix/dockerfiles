@@ -40,6 +40,12 @@ See the repo on [Docker Hub](https://hub.docker.com/u/badouralix/).
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-jq?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-jq?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq)
 
+- [*curl-jq-yq*](https://hub.docker.com/r/badouralix/curl-jq-yq) - alpine-based docker image with `curl`, `jq` and `yq` \
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-jq-yq?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
+[![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-jq-yq?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-jq-yq?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
+[![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-jq-yq?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
+
 - [*deplacement-covid-19*](https://hub.docker.com/r/badouralix/deplacement-covid-19) - alpine-based docker image serving the official covid-19 générateur d'attestation de déplacement dérogatoire \
 [![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/deplacement-covid-19?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/deplacement-covid-19?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/deplacement-covid-19)

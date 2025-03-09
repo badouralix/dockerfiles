@@ -14,6 +14,7 @@ jobs:
         - caddy-dns-ovh
         - curl-http2
         - curl-jq
+        - curl-jq-yq
         - easy-blake2s
         - oh-my-via
         - python-scrapy
