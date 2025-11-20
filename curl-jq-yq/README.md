@@ -1,6 +1,6 @@
 # curl-jq-yq
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/s-yq?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
+[![Docker Pulls](https://img.shields.io/docker/pulls/badouralix/curl-jq-yq?label=pulls&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
 [![Docker Stars](https://img.shields.io/docker/stars/badouralix/curl-jq-yq?label=stars&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/badouralix/curl-jq-yq?logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/badouralix/curl-jq-yq?label=size&logo=docker&logoColor=white)](https://hub.docker.com/r/badouralix/curl-jq-yq)
